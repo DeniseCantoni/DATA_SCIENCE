@@ -1,0 +1,919 @@
+---
+title: "Analisi dei Ruoli nel Basket  "
+author: "Denise Cantoni"
+output:
+  ioslides_presentation:
+    incremental: yes
+    css: "style.css"
+    widescreen: true
+  slidy_presentation:
+    incremental: yes
+  editor_options:
+    chunk_output_type: inline
+  revealjs::revealjs_presentation:
+    center: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = TRUE, message = FALSE, warning = FALSE)
+```
+
+```{r echo=FALSE}
+# librerie utilizzate
+
+library (dplyr)
+library (tibble)
+library (tidyr)
+library (ggplot2)
+library(plotly)
+library(scales)
+library(gridExtra) #per raggruppare i grafici
+library(fmsb)
+library(tidyverse)
+
+```
+
+```{r echo=FALSE}
+first = read.csv("C:/Users/denis/OneDrive/Desktop/database/progetto/players 2021-2022/2021-2022 NBA Player Stats - Regular.csv", sep=";")
+second = read.csv("C:/Users/denis/OneDrive/Desktop/database/progetto/players 2021-2022/Bio.csv", sep=";")
+
+```
+
+```{r echo=FALSE}
+tre = read.csv("C:/Users/denis/OneDrive/Desktop/database/progetto/players 2001-2002/terzo.csv", sep=";")
+forth = read.csv("C:/Users/denis/OneDrive/Desktop/database/progetto/players 2001-2002/Bio.csv", sep=";")
+fifth = read.csv("C:/Users/denis/OneDrive/Desktop/database/progetto/players 2001-2002/quinto.csv", sep=";")
+```
+
+```{r echo=FALSE}
+forth = forth %>%
+           select(-X, -X.1)
+
+fifth = fifth %>%
+           select(-X, -X.1)
+```
+
+```{r echo=FALSE}
+#aggiungo la colonna della valutazione finale del giocatore che ottengo dalla seguente formula   Efficiency (EFF) = (PTS + REB + AST + STL + BLK – Missed FG – Missed FT – TOV)
+
+Efficacia_1 = c(first[, 31] + first[,25] + first[,26] + first[,27] + first[,28] - (first[,14] - first[,13]) - (first[,17] - first[,16]) - (first[,21] - first[,20]) - first[,29]- first[,30])
+
+first[, 32]= Efficacia_1
+
+
+canestri_segnati= c(first[,10]+ first[,20])
+first[, 33]= canestri_segnati
+
+```
+
+```{r echo=FALSE}
+#noto che hanno nome poco pratici alla legibilità del documento
+#rinomino le colonne del dataset
+#creo un array che associa il nome corto con quello completo
+nomi_colonne_1 = c(indice ="Rk", Nome ="Player", Posizioni ="Pos", Età ="Age", Altezza="Altezza", Squadra ="Tm", Partite.Giocate ="G", Partite.Iniziate ="GS", Minuti.Partita ="MP", Fiel.Goal ="FG", Fiel.Goal.Provati ="FGA", Percentuale.Fiel.Goal ="FG.", Canestri.Segnati.3="X3P", Tiri.da.3="X3PA", Percentuale.Tiri.3="X3P.", Canestri.Segnati.2="X2P", Tiri.da.2="X2PA", Percentuale.Tiri.2="X2P.", efficienza.tiri="eFG.", Tiri.Liberi.Segnati="FT", Tiri.Liberi.Tirati="FTA", Percentuale.Tiri.Liberi="FT.", Rimbalzi.Offensivi="ORB", Rimbalzi.Difensivi="DRB", Rimbalzi.Totali="TRB", Assist.Totali="AST", Palle.Rubate="STL", Blocchi.a.Partita="BLK", Guadagno.a.Partita="TOV", Falli.Personali="AG", Punti.Totali.Partita="PTS", Valutazione="V32", Canestri.Partita="V33" )
+
+
+# importo libreria necessaria per la funzione rename: library (dplyr)
+
+first = rename(first, all_of(nomi_colonne_1))
+
+```
+
+```{r echo=FALSE}
+
+terzo <- left_join(tre, fifth, by = "Nome")
+terzo[,16] = gsub(",", ".", terzo$Canestri.Segnati.2)
+terzo[,33] = gsub(",", ".", terzo$Canestri.Partita)
+
+terzo = terzo %>%
+           select(-Punti.Totali.Partita.1, -Tiri.Liberi.Segnati.1, -Canestri.Segnati.3.1)
+
+```
+
+```{r echo=FALSE}
+#divido il dataset in base alle posizioni dei giocatori
+
+first$Altezza <- as.numeric(gsub(",", ".", first$Altezza))
+
+centro= filter(first, Posizioni=="C")
+playmaker= filter(first, Posizioni=="P")
+guardia_tiratrice = filter(first, Posizioni=="G")
+ala_grande = filter(first, Posizioni== "AG")
+ala_piccola = filter(first, Posizioni== "AP")
+
+centro = arrange(centro, Altezza)
+playmaker = arrange(playmaker, Altezza)
+guardia_tiratrice = arrange(guardia_tiratrice, Altezza)
+ala_grande = arrange(ala_grande, Altezza)
+ala_piccola = arrange(ala_piccola, Altezza)
+
+playmaker = playmaker [-(1:2), ]
+guardia_tiratrice = guardia_tiratrice [-(1:1), ]
+ala_grande = ala_grande [-(1:1), ]
+
+
+
+centro2= filter(terzo, Posizioni=="C")
+playmaker2= filter(terzo, Posizioni=="P")
+guardia_tiratrice2 = filter(terzo, Posizioni=="G")
+ala_grande2 = filter(terzo, Posizioni== "AG")
+ala_piccola2 = filter(terzo, Posizioni== "AP")
+
+centro2 = arrange(centro2, Altezza)
+playmaker2 = arrange(playmaker2, Altezza)
+guardia_tiratrice2 = arrange(guardia_tiratrice2, Altezza)
+ala_grande2 = arrange(ala_grande2, Altezza)
+ala_piccola2 = arrange(ala_piccola2, Altezza)
+
+```
+
+```{r echo=FALSE}
+#costruisco tabella che contenga posizioni e quantitativo di giocatori per posizione
+
+frequenza = table(first$Posizioni)
+frequenza = data.frame(frequenza)
+
+frequenza = arrange (frequenza, desc(Freq))
+frequenza = frequenza[1:5,]
+frequenza[,2] = (frequenza[,2]*100)/605
+frequenza[,2] = round(frequenza[,2],digits=2)
+names(frequenza)[1] <- "Posizioni"
+
+frequenza2 = table(terzo$Posizioni)
+frequenza2 = data.frame(frequenza2)
+
+frequenza2 = arrange (frequenza2, desc(Freq))
+frequenza2 = frequenza2[1:5,]
+frequenza2[,2] = (frequenza2[,2]*100)/440
+frequenza2[,2] = round(frequenza2[,2] , digits = 2)
+names(frequenza2)[1] <- "Posizioni"
+
+```
+
+## DATASET USATI
+
+I dataset utilizzati sono:
+
+<https://www.kaggle.com/datasets/vivovinco/nba-player-stats>  Ogni riga corrisponde a un giocatore che ha partecipato al campionato 2021-2022.
+
+<https://www.nba.com/stats/players/bio?SeasonType=Regular%20Season>  
+
+<https://www.nba.com/stats/players/traditional?SeasonType=Regular+Season&Season=2001-02>  Ogni riga corrisponde a un giocatore che ha partecipato al campionato 2001-2002.
+
+<https://www.nba.com/stats/players/bio?SeasonType=Regular+Season&Season=2001-02> 
+
+## DOMANDE
+
+**Com'è variato il gioco (dal punto di vista delle posizioni) in 20 anni?**
+
+1.  Qual è la frequenza della distribuzione dei ruoli?
+
+2.  C'è un rapporto tra altezza e ruolo?
+
+3.  C'è un rapporto tra le posizioni e le abilità del giocatore?
+
+## RUOLI NEL BASKET
+
+1.  Playmaker(P): miglior tiro della squadra e miglior trattamento di palla (passaggi e palleggio). Ha il compito di guidare l'attacco della squadra. Non molto alto.(180-185 m)
+
+2.  Guardia tiratrice(G): ottimo tiratore e ottime capacità di penetrazione dentro l'area, aiuta il play a portare palla. Di solito è alto in media 1,90/2m.
+
+3.  Ala piccola(AP): bravo nel tiro (soprattutto da 3) e funge da secondo lungo quando serve. Alto in media 2 m
+
+4.  Ala grande(AG): vicino al canestro, aiuta nella conquista dei rimbalzi. Alto solitamente 210 cm. (via di mezzo tra ala piccola e centro)
+
+5.  Centro(C): giocatore più alto della squadra e più fisicato. Tiratore da sotto canestro, stoppa, prende rimbalzi e porta i blocchi.
+
+<br> <br>
+
+<!-- Per centrare l'immagine utilizzando HTML -->
+
+::: {style="text-align: center;"}
+![Possibili posizioni dei giocatori in base al ruolo](C:%5CUsers%5Cdenis%5COneDrive%5CDesktop%5Cdatabase%5Cprogetto%5Cposizioni.png)
+:::
+
+## DOMANDA 1
+
+```{r eval = FALSE}
+#Qual è la frequenza della distribuizione dei ruoli?
+```
+
+```{r echo=FALSE, fig.height=5, fig.width=5.2, results='asis'}
+
+cat('<div style="display: flex;">')
+cat('<div style="flex: 1; max-width: 50%; margin-right: 6px">')
+
+colori_posizioni <- c("C" = "red", "AG" = "blue", "P" = "limegreen", "AP" = "orange", "G" = "purple")
+
+grafico_2 <- ggplot(data = frequenza2, aes(x = Freq, y = reorder(Posizioni, Freq), fill = Posizioni)) +
+  geom_col() +
+  geom_text(aes(label = paste0(Freq, "%")), vjust = 0.4, hjust = -0.2) +
+  labs(x = "Frequenza", y = "Posizioni", title = "% Frequenza Posizioni (2001-2002)") +
+  theme_minimal() +
+  coord_cartesian(xlim = c(15, max(frequenza2$Freq) * 1.05)) +
+  theme(legend.position = "none") +
+  scale_x_continuous(labels = scales::percent_format(scale = 1)) +
+  scale_fill_manual(values = colori_posizioni) +
+  guides(fill = guide_legend(title = "Posizioni"))
+
+grafico_2
+
+cat('</div>')
+```
+
+```{r echo=FALSE, fig.height=5, fig.width=5.5, results='asis'}
+cat('<div style="flex: 1; max-width: 50%; margin-right: 6px">')
+
+grafico <- ggplot(data = frequenza, aes(x = Freq, y = reorder(Posizioni, Freq), fill = Posizioni)) + 
+  geom_col() +
+  geom_text(aes(label = paste0(Freq, "%")), vjust = 0.4, hjust = -0.2) +
+  labs(x = "Frequenza", y = "Posizioni", title = "% Frequenza Posizioni (2021-2022)") +
+  theme_minimal() +
+  coord_cartesian(xlim = c(15, max(frequenza$Freq) * 1.05)) +
+  scale_x_continuous(labels = scales::percent_format(scale = 1))+
+  scale_fill_manual(values = colori_posizioni) +
+  guides(fill = guide_legend(title = "Posizioni"))
+
+grafico
+
+cat('</div>')
+cat('</div>')
+```
+
+## DOMANDA 2
+
+```{r eval = FALSE}
+#C'è un rapporto tra altezza e ruolo?
+```
+
+```{r echo=FALSE, fig.height=5, fig.width=5.1, results='asis'}
+
+cat('<div style="display: flex;">')
+cat('<div style="flex: 1; max-width: 48%">')
+
+FIRST2 = rbind(centro2, playmaker2, guardia_tiratrice2, ala_grande2, ala_piccola2)
+FIRST2$Altezza <- as.numeric(gsub(",", ".", FIRST2$Altezza))
+is_numeric <- is.numeric(FIRST2$Altezza)
+FIRST2$Altezza[272] <- 6.4
+
+FIRST2 <- FIRST2[complete.cases(FIRST2$Altezza), ]
+
+
+colori_posizioni <- c("C" = "red", "AG" = "blue", "P" = "limegreen", "AP" = "orange", "G" = "purple")
+
+grafico_1_2 <- ggplot(data = FIRST2, aes(x = Posizioni, y = Altezza, colour = Posizioni)) +
+  geom_point(position = position_jitter(width = 0.2), alpha = 0.5) +
+  labs(title = "Rapporto tra Altezza e Posizioni (2001-2002)", x = "Posizioni", y = "Altezza") +
+  guides(color = guide_legend(title = "Posizioni")) +
+  scale_color_manual(values = colori_posizioni) +
+    scale_y_continuous(
+    breaks = seq(min(FIRST2$Altezza), max(FIRST2$Altezza), by = 0.2),
+    labels = scales::number_format(scale = 1.0, accuracy = 0.1)) +
+  theme(legend.position = "none")
+
+grafico_interattivo_2 <- ggplotly(grafico_1_2, tooltip = c("Altezza"))
+grafico_interattivo_2
+
+cat('</div>')
+cat('<div style="flex: 1;min-width: 50%">')
+
+FIRST = rbind(centro, playmaker, guardia_tiratrice, ala_grande, ala_piccola)
+FIRST$Altezza <- as.numeric(gsub(",", ".", FIRST$Altezza))
+is_numeric <- is.numeric(FIRST$Altezza)
+FIRST$Altezza[272] <- 6.4
+
+FIRST = FIRST[,1:4]
+SECOND = second[,1:4]
+SECOND <- SECOND %>%
+  rename(Nome = PLAYER)
+SECOND <- SECOND %>%
+  rename(Altezza = HEIGHT)
+
+FIRST <- left_join(FIRST, SECOND, by = "Nome")
+FIRST <- FIRST[complete.cases(FIRST$Altezza), ]
+
+colori_posizioni <- c("C" = "red", "AG" = "blue", "P" = "limegreen", "AP" = "orange", "G" = "purple")
+
+grafico_1 <- ggplot(data = FIRST, aes(x = Posizioni, y = Altezza, colour = Posizioni)) +
+  geom_point(position = position_jitter(width = 0.2), alpha = 0.5) +
+  labs(title = "Rapporto tra Altezza e Posizioni (2021-2022)", x = "Posizioni", y = "Altezza") +
+  guides(color = guide_legend(title = "Posizioni")) +
+  scale_color_manual(values = colori_posizioni) +
+  scale_y_continuous(breaks = seq(min(FIRST$Altezza), max(FIRST$Altezza), by = 0.2)) +
+  theme(legend.position = "buttom")
+  
+
+grafico_interattivo <- ggplotly(grafico_1, tooltip = c("Altezza"))
+grafico_interattivo
+
+cat('</div>')
+cat('</div>')
+```
+
+```{r eval = FALSE, style="text-align: center;"}
+#altezza media delle posizioni (2001-2002)
+```
+
+```{r echo=FALSE, style="text-align: center;"}
+
+media_centro2 = mean(centro2$Altezza, na.rm = TRUE)
+media_playmaker2 = mean(playmaker2$Altezza, na.rm = TRUE)
+media_guardia_tiratrice2 = mean(guardia_tiratrice2$Altezza, na.rm = TRUE)
+media_ala_grande2 = mean(ala_grande2$Altezza, na.rm = TRUE)
+media_ala_piccola2 = mean(ala_piccola2$Altezza, na.rm = TRUE)
+
+piedi = c ( media_centro2, media_ala_grande2, media_playmaker2, media_ala_piccola2, media_guardia_tiratrice2)
+POSIZIONI2 = c("C","AG", "P", "AP", "G")
+
+tabella_medie2 = t(data.frame(piedi))
+colnames(tabella_medie2) <- POSIZIONI2
+
+cm = c(208.2, 205.63, 187.72, 201.50, 195.61)  
+tabella_medie2 <- rbind(tabella_medie2, cm)
+tabella_medie2 = round(tabella_medie2, 2)
+tabella_medie2
+```
+
+```{r eval = FALSE, style="text-align: center;"}
+#altezza media delle posizioni (2021-2022)
+```
+
+```{r echo=FALSE, style="text-align: center"}
+
+media_centro = mean(centro$Altezza, na.rm = TRUE)
+media_playmaker = mean(playmaker$Altezza, na.rm = TRUE)
+media_guardia_tiratrice = mean(guardia_tiratrice$Altezza, na.rm = TRUE)
+media_ala_grande = mean(ala_grande$Altezza, na.rm = TRUE)
+media_ala_piccola = mean(ala_piccola$Altezza, na.rm = TRUE)
+
+piedi = c ( media_centro, media_ala_grande, media_playmaker, media_ala_piccola, media_guardia_tiratrice)
+POSIZIONI = c("C","AG", "P", "AP", "G")
+
+tabella_medie = t(data.frame(piedi))
+colnames(tabella_medie) <- POSIZIONI
+
+cm = c(203.45, 200.91, 191.77, 197.58, 195.58)
+tabella_medie <- rbind(tabella_medie, cm)
+tabella_medie = round(tabella_medie, 2)
+tabella_medie
+```
+
+## DOMANDA 3
+
+```{r eval = FALSE}
+#C'è un rapporto tra le posizioni e le abilità del giocatore?
+```
+
+-   punti a partita
+-   assist
+-   rimbalzi
+-   palle recuperate
+
+## PUNTI A PARTITA
+
+```{r echo=FALSE, fig.height=5, fig.width=5.5, results='asis'}
+
+cat('<div style="display: flex;">')
+cat('<div style="flex: 1; max-width: 50%; margin-right: 6px">')
+
+PUNTI2 = terzo[order(terzo$Punti.Totali.Partita, decreasing = TRUE), ]
+PUNTI2 = PUNTI2[1:15, ]
+PUNTI2 =data.frame(PUNTI2)
+PUNTI2[,16]= as.numeric(PUNTI2[,16])
+
+PUNTI_2_2 = PUNTI2[,16]*2
+PUNTI_1_2 = PUNTI2[,20]
+PUNTI_3_2 = PUNTI2[,13]*3
+Nomi2 = PUNTI2 [, 2]
+Posizioni2 = PUNTI2[, 3]
+
+TOTALE2= PUNTI_1_2+ PUNTI_2_2+ PUNTI_3_2
+
+dati2 <- data.frame(Nomi2, PUNTI_1_2, PUNTI_2_2, PUNTI_3_2, TOTALE2)
+dati_lunghi2 <- tidyr::gather(dati2, Chiave, Punti, -Nomi2, -TOTALE2) 
+dati_lunghi2 <- dati_lunghi2[order(dati_lunghi2$Punti, decreasing = TRUE), ]
+dati_lunghi2$Posizioni <- Posizioni2
+
+nuovi_colori <- c("Tiri liberi", "Zona 2 punti", "Zona 3 punti")
+
+grafico_3_2 <- ggplot(data = dati_lunghi2, aes(x = reorder(Nomi2, -Punti), y = Punti, fill = Chiave)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Punti a Partita per Giocatori(2001-2002)",
+       x = "Giocatori",
+       y = "Punti totali",
+       fill = "Zona del tiro") +
+  scale_fill_manual(values = c("PUNTI_3_2" = "red", "PUNTI_2_2" = "orange", "PUNTI_1_2" = "pink"),
+                    labels = nuovi_colori) +
+  theme_minimal() +
+  coord_cartesian(ylim = c(0, max(dati_lunghi2$TOTALE) * 1.05)) +
+  geom_text(aes(label = Punti), position = position_stack(vjust = 0.5), size = 3.2) +
+  theme(axis.text.x = element_text(angle = -45, hjust = 1, vjust = 0.5)) +
+  theme(legend.position = "none")
+
+
+grafico_interattivo_3_2 = ggplotly(grafico_3_2, tooltip = c("Punti"))
+grafico_interattivo_3_2
+
+cat('</div>')
+```
+
+```{r echo=FALSE, fig.height=5, fig.width=5.5, results='asis'}
+cat('<div style="flex: 1; max-width: 50%; margin-right: 6px">')
+
+PUNTI = first[order(first$Punti.Totali.Partita, decreasing = TRUE), ]
+PUNTI = PUNTI[1:15, ]
+PUNTI =data.frame(PUNTI)
+
+ZONA_2 = PUNTI[,16]*2
+TIRI_LIBERI = PUNTI[,20]
+ZONA_3 = PUNTI[,13]*3
+Nomi = PUNTI [, 2]
+Posizioni = PUNTI[, 3]
+
+TOTALE= TIRI_LIBERI+ ZONA_2+ ZONA_3
+
+dati <- data.frame(Nomi, TIRI_LIBERI, ZONA_2, ZONA_3, TOTALE)
+dati_lunghi <- tidyr::gather(dati, Chiave, Punti, -Nomi, -TOTALE) 
+dati_lunghi <- dati_lunghi[order(dati_lunghi$Punti, decreasing = TRUE), ]
+dati_lunghi$Posizioni <- Posizioni
+
+nuovi_colori <- c("Tiri liberi", "Zona 2 punti", "Zona 3 punti")
+
+grafico_3 <- ggplot(data = dati_lunghi, aes(x = reorder(Nomi, -Punti), y = Punti, fill = Chiave)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Punti a Partita per Giocatori(2021-2022)",
+       x = "Giocatori",
+       y = "Punti totali",
+       fill = "Zona del tiro") +
+  scale_fill_manual(values = c("ZONA_3" = "red", "ZONA_2" = "orange", "TIRI_LIBERI" = "pink"),
+                    labels = nuovi_colori) +
+  theme_minimal() +
+  coord_cartesian(ylim = c(0, max(dati_lunghi$TOTALE) * 1.05)) +
+  geom_text(aes(label = Punti), position = position_stack(vjust = 0.5), size = 3.2) +
+  theme(axis.text.x = element_text(angle = -45, hjust = 1, vjust = 0.5)) +
+  theme(legend.position = "top")
+
+grafico_interattivo_3 = ggplotly(grafico_3, tooltip = c("Punti"))
+grafico_interattivo_3
+
+cat('</div>')
+cat('</div>')
+```
+
+```{r echo=FALSE, fig.height=5, fig.width=5, results='asis', }
+
+cat('<div style="display: flex;">')
+cat('<div style="flex: 1;">')
+
+grafico_32_2 <- ggplot(data = PUNTI2, aes(x = reorder(Nome, -Punti.Totali.Partita), y = Punti.Totali.Partita, fill = Posizioni)) +
+  geom_col() +
+  geom_text(aes(label = Posizioni), position = position_stack(vjust = 0.95), size = 3.2, color = "white") +
+  labs(title = "Posizioni Giocatori Punti Totale a Partita (2001-2002)",
+       x = "Giocatore",
+       y = "Punti Totali") +
+  theme_minimal() +
+  scale_fill_manual(values = colori_posizioni) +
+  theme(axis.text.x = element_text(angle = -45, hjust = 1, vjust = 0.5))+
+  coord_cartesian(ylim = c(20, max(PUNTI2$Punti.Totali.Partita) * 1.02)) +
+  theme(legend.position = "none")
+
+
+grafico_interattivo_32_2 = ggplotly(grafico_32_2, tooltip = c("Punti.Totali.Partita"))
+grafico_interattivo_32_2
+
+cat('</div>')
+cat('<div style="flex: 1;">')
+
+grafico_32 <- ggplot(data = PUNTI, aes(x = reorder(Nome, -Punti.Totali.Partita), y = Punti.Totali.Partita, fill = Posizioni)) +
+  geom_col() +
+  geom_text(aes(label = Posizioni), position = position_stack(vjust = 0.95), size = 3.2, color = "white") +
+  labs(title = "Posizioni Giocatori Punti Totale a Partita (2021-2022)",
+       x = "Giocatore",
+       y = "Punti Totali") +
+  theme_minimal() +
+  scale_fill_manual(values = colori_posizioni) +
+  theme(axis.text.x = element_text(angle = -45, hjust = 1, vjust = 0.5))+
+  coord_cartesian(ylim = c(22, max(PUNTI$Punti.Totali.Partita) * 1.02)) +
+  theme(legend.position = "top")
+
+
+grafico_interattivo_32 = ggplotly(grafico_32, tooltip = c("Punti.Totali.Partita"))
+grafico_interattivo_32
+
+cat('</div>')
+cat('</div>')
+
+```
+## ASSIST
+
+```{r echo=FALSE, fig.height=5, fig.width=5, results='asis'}
+
+cat('<div style="display: flex;">')
+cat('<div style="flex: 1;">')
+
+ASSIST2 = terzo[order(terzo$Assist.Totali, decreasing = TRUE), ]
+ASSIST2 = ASSIST2[1:15, ]
+
+grafico_7_2 <- ggplot(data = ASSIST2, aes(x = reorder(Nome, -Assist.Totali), y = Assist.Totali, fill = Posizioni)) +
+  geom_col() +
+  geom_text(aes(label = Posizioni), position = position_stack(vjust = 0.95), size = 3.2, color = "white") +
+  labs(title = "Top 15 Assist (2001-2002)",
+       x = "Giocatori",
+       y = "Assist") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = -45, hjust = 1, vjust = 0.5)) +
+  scale_fill_manual(values = colori_posizioni) +
+  coord_cartesian(ylim = c(5, max(ASSIST2$Assist.Totali) * 1.02)) +
+  theme(legend.position = "top")
+
+grafico_interattivo_7_2 = ggplotly(grafico_7_2, tooltip = c("Assist.Totali"))
+grafico_interattivo_7_2
+
+cat('</div>')
+cat('<div style="flex: 1; min-width: 6">')
+
+ASSIST = first[order(first$Assist.Totali, decreasing = TRUE), ]
+ASSIST = ASSIST[1:15, ]
+
+grafico_7 <- ggplot(data = ASSIST, aes(x = reorder(Nome, -Assist.Totali), y = Assist.Totali, fill = Posizioni)) +
+  geom_col() +
+  geom_text(aes(label = Posizioni), position = position_stack(vjust = 0.95), size = 3.2, color = "white") +
+  labs(title = "Top 15 Assist (2021-2022)",
+       x = "Giocatori",
+       y = "Assist") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = -45, hjust = 1, vjust = 0.5)) +
+  scale_fill_manual(values = colori_posizioni) +
+  coord_cartesian(ylim = c(6, max(ASSIST$Assist.Totali) * 1.02)) +
+  theme(legend.position = "top")
+
+grafico_interattivo_7 = ggplotly(grafico_7, tooltip = c("Assist.Totali"))
+grafico_interattivo_7
+
+cat('</div>')
+cat('</div>')
+
+```
+
+## RIMBALZI
+
+```{r echo=FALSE, fig.height=5, fig.width=5, results='asis'}
+
+cat('<div style="display: flex;max-width: 45%; margin-right: 6px">')
+cat('<div style="flex: 1;">')
+
+rimbalzi2 = terzo[order(terzo$Rimbalzi.Offensivi, decreasing = TRUE), ]
+rimbalzi2 = rimbalzi2[1:9,]
+rimbalzi2 = rimbalzi2[-8,]
+
+Rimbalzi2 = terzo[order(terzo$Rimbalzi.Difensivi, decreasing = TRUE), ]
+Rimbalzi2 = Rimbalzi2[1:9,]
+Rimbalzi2 = Rimbalzi2[-3,]
+Rimbalzi2 = Rimbalzi2[-6,]
+
+RIMBALZI2 = rbind(rimbalzi2, Rimbalzi2)
+RIMBALZI2 = RIMBALZI2[order(-RIMBALZI2$Rimbalzi.Totali), ]
+
+
+Rimbalzi_Offensivi2 = RIMBALZI2[,23]
+Rimbalzi_Difensivi2 = RIMBALZI2[,24]
+Nomi2 = RIMBALZI2[, 2]
+
+dati_lunghi_8_2 = data.frame(
+  Nomi = rep(RIMBALZI2[, 2], 2),
+  Tipo = rep(c("Offensivi", "Difensivi"), each = nrow(RIMBALZI2)),
+  Rimbalzi = c(RIMBALZI2[,23], RIMBALZI2[,24])
+)
+
+cat('</div>')
+```
+
+```{r echo=FALSE, fig.height=5, fig.width=5.5, results='asis'}
+cat('<div style="flex: 1; max-width: 50%; margin-right: 6px">')
+
+rimbalzi = first[order(first$Rimbalzi.Offensivi, decreasing = TRUE), ]
+rimbalzi = rimbalzi[1:8,]
+
+Rimbalzi = first[order(first$Rimbalzi.Difensivi, decreasing = TRUE), ]
+Rimbalzi = Rimbalzi[1:8,]
+Rimbalzi = Rimbalzi[-2,]
+
+RIMBALZI= rbind(rimbalzi, Rimbalzi)
+RIMBALZI <- RIMBALZI[order(-RIMBALZI$Rimbalzi.Totali), ]
+
+
+Rimbalzi_Offensivi = RIMBALZI[,23]
+Rimbalzi_Difensivi = RIMBALZI[,24]
+Nomi = RIMBALZI[, 2]
+
+dati_lunghi_8 = data.frame(
+  Nomi = rep(RIMBALZI[, 2], 2),
+  Tipo = rep(c("Offensivi", "Difensivi"), each = nrow(RIMBALZI)),
+  Rimbalzi = c(RIMBALZI[,23], RIMBALZI[,24])
+)
+
+cat('</div>')
+cat('</div>')
+```
+
+```{r echo=FALSE, fig.height=5, fig.width=5, results='asis'}
+
+cat('<div style="display: flex;">')
+cat('<div style="flex: 1;">')
+
+grafico_82_2 <- ggplot(data = RIMBALZI2, aes(x = reorder(Nomi, -Rimbalzi.Totali), y = Rimbalzi.Totali, fill = Posizioni)) +
+  geom_col() +
+  geom_text(aes(label = Posizioni), position = position_stack(vjust = 0.9), size = 3.2, color = "white") +
+  labs(title = "Posizioni Giocatori Top 15 Rimbalzi (2001-2002)",
+       x = "Giocatori",
+       y = "Rimbalzi totali",
+       fill = "Posizioni") +  
+  scale_fill_manual(values = colori_posizioni,
+                    labels = c("Canestri da 2 punti", "Canestri da 3 punti", "Totale")) +
+  theme_minimal() +
+  coord_cartesian(ylim = c(7, max(RIMBALZI2$Rimbalzi.Totali) * 1.05)) +
+  theme(axis.text.x = element_text(angle = -45, hjust = 1, vjust = 0.5)) +
+  theme(legend.position = "none")
+
+grafico_interattivo_82_2 = ggplotly(grafico_82_2, tooltip = "Rimbalzi.Totali")
+grafico_interattivo_82_2
+
+cat('</div>')
+cat('<div style="flex: 1; min-width: 6">')
+
+grafico_82 <- ggplot(data = RIMBALZI, aes(x = reorder(Nomi, -Rimbalzi.Totali), y = Rimbalzi.Totali, fill = Posizioni)) +
+  geom_col() +
+  geom_text(aes(label = Posizioni), position = position_stack(vjust = 0.9), size = 3.2, color = "white") +
+  labs(title = "Posizioni Giocatori Top 15 Rimbalzi (2021-2022)",
+       x = "Giocatori",
+       y = "Rimbalzi totali",
+       fill = "Posizioni") +  
+  scale_fill_manual(values = colori_posizioni,
+                    labels = c("Canestri da 2 punti", "Canestri da 3 punti", "Totale")) +
+  theme_minimal() +
+  coord_cartesian(ylim = c(7.5, max(RIMBALZI$Rimbalzi.Totali) * 1.02)) +
+  theme(axis.text.x = element_text(angle = -45, hjust = 1, vjust = 0.5)) +
+  theme(legend.position = "top")
+
+grafico_interattivo_82 = ggplotly(grafico_82, tooltip = "Rimbalzi.Totali")
+grafico_interattivo_82
+
+cat('</div>')
+cat('</div>')
+
+```
+
+## RECUPERO PALLE
+
+```{r echo=FALSE, fig.height=5, fig.width=5, results='asis'}
+
+cat('<div style="display: flex;">')
+cat('<div style="flex: 1;">')
+
+RECUPERI2= terzo[order(terzo$Palle.Rubate, decreasing = TRUE), ]
+RECUPERI2 = RECUPERI2[1:15, ]
+
+grafico_9_2 <- ggplot(data = RECUPERI2, aes(x = reorder(Nome, -Palle.Rubate), y = Palle.Rubate, fill = Posizioni)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = Posizioni), position = position_stack(vjust = 0.95), size = 3.2, color = "white") +
+  labs(title = "Top 15 Recuperi palle (2001-2002)",
+       x = "Giocatori",
+       y = "Recuperi") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = -45, hjust = 1, vjust = 0.5)) +
+  scale_fill_manual(values = colori_posizioni) +
+  coord_cartesian(ylim = c(1.6, max(RECUPERI2$Palle.Rubate) * 1.02)) +
+  theme(legend.position = "none")
+
+grafico_interattivo_9_2 = ggplotly(grafico_9_2, tooltip = c("Palle.Rubate"))
+grafico_interattivo_9_2
+
+cat('</div>')
+cat('<div style="flex: 1; min-width: 6">')
+
+RECUPERI= first[order(first$Palle.Rubate, decreasing = TRUE), ]
+RECUPERI = RECUPERI[1:15, ]
+
+grafico_9 <- ggplot(data = RECUPERI, aes(x = reorder(Nome, -Palle.Rubate), y = Palle.Rubate, fill = Posizioni)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = Posizioni), position = position_stack(vjust = 0.95), size = 3.2, color = "white") +
+  labs(title = "Top 15 Recuperi palle (2021-2022)",
+       x = "Giocatori",
+       y = "Recuperi") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = -45, hjust = 1, vjust = 0.5)) +
+  scale_fill_manual(values = colori_posizioni) +
+  coord_cartesian(ylim = c(1.5, max(RECUPERI$Palle.Rubate) * 1.05)) +
+  theme(legend.position = "top")
+
+grafico_interattivo_9 = ggplotly(grafico_9, tooltip = c("Palle.Rubate"))
+grafico_interattivo_9
+
+cat('</div>')
+cat('</div>')
+```
+
+## SOMMARIO DOMANDA 3
+
+```{r echo=FALSE, fig.height=5.5, fig.width=5, results='asis'}
+
+cat('<div style="display: flex;max-width: 45%; margin-right: 6px">')
+cat('<div style="flex: 1;">')
+
+centro2[,33] = as.numeric(centro2[,33])
+playmaker2[,33] = as.numeric(playmaker2[,33])
+guardia_tiratrice2[,33] = as.numeric(guardia_tiratrice2[,33])
+ala_grande2[,33] = as.numeric(ala_grande2[,33])
+ala_piccola2[,33] = as.numeric(ala_piccola2[,33])
+
+medie_colonne_centro2 = colMeans(centro2[, sapply(centro2, is.numeric)])
+medie_colonne_playmaker2 = colMeans(playmaker2[, sapply(playmaker2, is.numeric)])
+medie_colonne_guardia_tiratrice2 = colMeans(guardia_tiratrice2[, sapply(guardia_tiratrice2, is.numeric)])
+medie_colonne_ala_grande2 = colMeans(ala_grande2[, sapply(ala_grande2, is.numeric)])
+medie_colonne_ala_piccola2 = colMeans(ala_piccola2[, sapply(ala_piccola2, is.numeric)])
+
+dataset_medie2 <- data.frame(
+  C = c(medie_colonne_centro2),
+  P = c(medie_colonne_playmaker2),
+  G = c(medie_colonne_guardia_tiratrice2),
+  AG = c(medie_colonne_ala_grande2),
+  AP = c(medie_colonne_ala_piccola2)
+)
+
+dataset_medie2 = t(dataset_medie2)
+dataset_medie2 = dataset_medie2[,c( 18, 19, 20, 24, 26)]
+
+dataset_medie2 = as.data.frame(dataset_medie2)
+for (col in names(dataset_medie2)) {
+  dataset_medie2[[col]] <- as.numeric(dataset_medie2[[col]])
+}
+
+dataset_medie3 = dataset_medie2
+dataset_medie3[,1] = ((dataset_medie3[,1] - min(dataset_medie3[,1]))/(max(dataset_medie3[,1]) -min(dataset_medie3[,1])))*100
+dataset_medie3[,2] = ((dataset_medie3[,2] - min(dataset_medie3[,2]))/(max(dataset_medie3[,2]) -min(dataset_medie3[,2])))*100
+dataset_medie3[,3] = ((dataset_medie3[,3] - min(dataset_medie3[,3]))/(max(dataset_medie3[,3]) -min(dataset_medie3[,3])))*100
+dataset_medie3[,4] = ((dataset_medie3[,4] - min(dataset_medie3[,4]))/(max(dataset_medie3[,4]) -min(dataset_medie3[,4])))*100
+dataset_medie3[,5] = ((dataset_medie3[,5] - min(dataset_medie3[,5]))/(max(dataset_medie3[,5]) -min(dataset_medie3[,5])))*100
+
+dataset_medie2 = data.frame(
+  Parametri = c("Rimbalzi.Totali", "Assist.Totali", "Palle.Rubate", "Punti.Totali.Partita", "Canestri.Totali"),
+  C = dataset_medie2[, 1],
+  P = dataset_medie2[, 2],
+  G = dataset_medie2[, 3],
+  AG = dataset_medie2[, 4],
+  AP = dataset_medie2[, 5]
+)
+
+dataset_medie3 = data.frame(
+  Parametri = c("Rimbalzi.Totali", "Assist.Totali", "Palle.Rubate", "Punti.Totali.Partita", "Canestri.Partita"),
+  C = dataset_medie3[, 1],
+  P = dataset_medie3[, 2],
+  G = dataset_medie3[, 3],
+  AG = dataset_medie3[, 4],
+  AP = dataset_medie3[, 5]
+)
+
+Posizione = c("C", "P", "G", "AG", "AP")
+dataset_medie2 = cbind(Posizione, dataset_medie2)
+
+dati_lunghi_10 <- data.frame(
+  Parametri = rep(dataset_medie2$Parametri, each = length(Posizione)),
+  Posizioni = rep(Posizione, times = length(dataset_medie2$Parametri)),
+  Valori = c(dataset_medie2$C, dataset_medie2$P, dataset_medie2$G, dataset_medie2$AG, dataset_medie2$AP),
+  Valori_Norm = c(dataset_medie3$C, dataset_medie3$P, dataset_medie3$G, dataset_medie3$AG, dataset_medie3$AP)
+)
+
+dati_lunghi_10 <- dati_lunghi_10[dati_lunghi_10$Parametri != "Canestri.Totali", ]
+
+dati_lunghi_10$Valori <- round(dati_lunghi_10$Valori, 2)
+
+colori_posizioni <- c("C" = "red", "AG" = "blue", "P" = "#008f39", "AP" = "orange", "G" = "purple")
+
+grafico_riassuntivo_2 <- ggplot(data = dati_lunghi_10, aes(x = Parametri, y = Valori, color = Posizioni)) +
+  geom_point(position = position_jitter(width = 0.1), alpha = 0.8) +
+  labs(title = "Punti di forza ruoli (2001-2002)", x = "Parametri", y = "Valore medio") +
+  guides(color = guide_legend(title = "Posizioni")) +
+  scale_color_manual(values = colori_posizioni) +
+  scale_y_continuous(
+    labels = scales::number_format(scale = 1.0, accuracy = 0.1))
+
+grafico_riassuntivo_2 <- ggplotly(grafico_riassuntivo_2, tooltip = c("Valori"))
+
+colori_posizioni <- c("C" = "red", "AG" = "blue", "P" = "#008f39", "AP" = "orange", "G" = "purple")
+
+grafico_riassuntivo_2 <- ggplot(data = dati_lunghi_10, aes(x = Parametri, y = Valori_Norm, color = Posizioni, text = dati_lunghi_10$Valori)) +
+  geom_point(position = position_jitter(width = 0.1), alpha = 0.8) +
+  labs(title = "Punti di forza ruoli Normalizzati(2001-2002)", x = "Parametri", y = "Valore medio") +
+  guides(color = guide_legend(title = "Posizioni")) +
+  scale_color_manual(values = colori_posizioni) +
+  theme(axis.text.x = element_text(angle = -45, hjust = 1, vjust = 0.5)) +
+  scale_y_continuous(
+    labels = scales::number_format(scale = 1.0, accuracy = 0.1))+
+  theme(axis.text.y = element_blank()) +
+  theme(legend.position = "none")
+
+grafico_riassuntivo_2 <- ggplotly(grafico_riassuntivo_2, tooltip = "text") 
+grafico_riassuntivo_2
+
+cat('</div>')
+```
+
+```{r echo=FALSE, fig.height=5.5, fig.width=5.5, results='asis'}
+cat('<div style="flex: 1; max-width: 50%; margin-right: 6px">')
+
+medie_colonne_centro = colMeans(centro[, sapply(centro, is.numeric)])
+medie_colonne_playmaker = colMeans(playmaker[, sapply(playmaker, is.numeric)])
+medie_colonne_guardia_tiratrice = colMeans(guardia_tiratrice[, sapply(guardia_tiratrice, is.numeric)])
+medie_colonne_ala_grande = colMeans(ala_grande[, sapply(ala_grande, is.numeric)])
+medie_colonne_ala_piccola = colMeans(ala_piccola[, sapply(ala_piccola, is.numeric)])
+
+
+dataset_medie <- data.frame(
+  C = c(medie_colonne_centro),
+  P = c(medie_colonne_playmaker),
+  G = c(medie_colonne_guardia_tiratrice),
+  AG = c(medie_colonne_ala_grande),
+  AP = c(medie_colonne_ala_piccola)
+)
+
+dataset_medie = t(dataset_medie)
+dataset_medie <- dataset_medie[,c( 22, 23, 24, 28, 30)]
+
+dataset_medie = as.data.frame(dataset_medie)
+for (col in names(dataset_medie)) {
+  dataset_medie[[col]] <- as.numeric(dataset_medie[[col]])
+}
+
+dataset_medie32 = dataset_medie
+dataset_medie32[,1] = ((dataset_medie32[,1] - min(dataset_medie32[,1]))/(max(dataset_medie32[,1]) -min(dataset_medie32[,1])))*100
+dataset_medie32[,2] = ((dataset_medie32[,2] - min(dataset_medie32[,2]))/(max(dataset_medie32[,2]) -min(dataset_medie32[,2])))*100
+dataset_medie32[,3] = ((dataset_medie32[,3] - min(dataset_medie32[,3]))/(max(dataset_medie32[,3]) -min(dataset_medie32[,3])))*100
+dataset_medie32[,4] = ((dataset_medie32[,4] - min(dataset_medie32[,4]))/(max(dataset_medie32[,4]) -min(dataset_medie32[,4])))*100
+dataset_medie32[,5] = ((dataset_medie32[,5] - min(dataset_medie32[,5]))/(max(dataset_medie32[,5]) -min(dataset_medie32[,5])))*100
+
+
+dataset_medie = cbind(Parametri = c("Rimbalzi.Totali", "Assist.Totali", "Palle.Rubate", "Punti.Totali.Partita", "Canestri.Partita"), dataset_medie)
+dataset_medie32 = cbind(Parametri = c("Rimbalzi.Totali", "Assist.Totali", "Palle.Rubate", "Punti.Totali.Partita", "Canestri.Partita"), dataset_medie32)
+
+Posizione = c("C", "P", "G", "AG", "AP")
+dataset_medie = cbind(Posizione, dataset_medie)
+dataset_medie32 = cbind(Posizione, dataset_medie32)
+
+dati_lunghi_9 <- data.frame(
+  Parametri = rep(dataset_medie$Parametri, each = length(Posizione)),
+  Posizioni = rep(Posizione, times = length(dataset_medie$Parametri)),
+  Valori = c(dataset_medie[,3], dataset_medie[,4], dataset_medie[,5], dataset_medie[,6], dataset_medie[,7]),
+  Valori_Norm = c(dataset_medie32[,3], dataset_medie32[,4], dataset_medie32[,5], dataset_medie32[,6], dataset_medie32[,7])
+)
+
+dati_lunghi_9 <- dati_lunghi_9[dati_lunghi_9$Parametri != "Canestri.Partita", ]
+dati_lunghi_9$Valori <- round(dati_lunghi_9$Valori, 2)
+
+colori_posizioni <- c("C" = "red", "AG" = "blue", "P" = "#008f39", "AP" = "orange", "G" = "purple")
+
+grafico_riassuntivo <- ggplot(data = dati_lunghi_9, aes(x = Parametri, y = Valori, color = Posizioni)) +
+  geom_point(position = position_jitter(width = 0.1), alpha = 0.8) +
+  labs(title = "Punti di forza ruoli (2021-2022)", x = "Parametri", y = "Valore medio") +
+  guides(color = guide_legend(title = "Posizioni")) +
+  scale_color_manual(values = colori_posizioni) +
+  scale_y_continuous(
+    labels = scales::number_format(scale = 1.0, accuracy = 0.1)
+  )
+
+grafico_RIASSUNTO <- ggplotly(grafico_riassuntivo, tooltip = c("Valori"))
+
+colori_posizioni <- c("C" = "red", "AG" = "blue", "P" = "#008f39", "AP" = "orange", "G" = "purple")
+
+grafico_riassuntivo <- ggplot(data = dati_lunghi_9, aes(x = Parametri, y = Valori_Norm, color = Posizioni, text =dati_lunghi_9$Valori)) +
+  geom_point(position = position_jitter(width = 0.1), alpha = 0.8) +
+  labs(title = "Punti di forza ruoli Normalizzati(2021-2022)", x = "Parametri", y = "Valore medio ") +
+  guides(color = guide_legend(title = "Posizioni")) +
+  scale_color_manual(values = colori_posizioni) +
+  theme(axis.text.x = element_text(angle = -45, hjust = 1, vjust = 0.5)) +
+  scale_y_continuous(
+    labels = scales::number_format(scale = 1.0, accuracy = 0.1))+
+  theme(axis.text.y = element_blank()) +
+  theme(legend.position = "top")
+
+grafico_RIASSUNTO <- ggplotly(grafico_riassuntivo, tooltip = "text")
+grafico_RIASSUNTO
+
+cat('</div>')
+cat('</div>')
+```
+
+## CONCLUSIONE
+
+1.  La frequenza dei ruoli è cambiata e ora i ruoli preferiti sono Guardia e Ala Piccola
+
+2.  Esiste una relazione tra ruolo e altezza. Il centro ha l'altezza media più alta mentre il Playmaker ha l'altezza media più bassa. L'altezza dei giocatori si sta uniformando rispetto a 20 anni fa
+
+3.  C'è una relazione tra prestazioni e ruolo, ma è cambiata leggermente nel tempo:
+
+    1.  Playmaker rimasti i migliori nei passaggi (assist), e nel recupero di palloni.
+
+    2.  I migliori rimbalzisti rimangono i Centri e le Ali Grandi non contribuisco più come 20 anni fa.
+
+    3.  I migliori tiratori non sono più le Guardie ma i Playmaker, e i Centri stanno acquisendo importanza
+
+4.  I diversi ruoli nel Basket stanno assumento funzioni leggermente diverse rispetto a 20 anni fa

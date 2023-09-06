@@ -1,0 +1,606 @@
+PLAYER;TEAM;AGE;HEIGHT;WEIGHT;COLLEGE;COUNTRY;DRAFT YEAR;DRAFT ROUND;DRAFT NUMBER;GP;PTS;REB;AST;NETRTG;OREB%;DREB%;USG%;TS%;AST%
+Facundo Campazzo;DEN;31;5.94;195;None;Argentina;Undrafted;Undrafted;Undrafted;65.0;5.1;1.8;3.4;-8.6;1.9;8.0;14.3;50.3;27.6
+Jared Harper;NOP;24;5.94;175;Auburn;USA;Undrafted;Undrafted;Undrafted;5.0;7.4;0.4;2.8;9.8;4.7;0.0;28.7;66.6;53.8
+Markus Howard;DEN;23;5.94;175;Marquette;USA;Undrafted;Undrafted;Undrafted;31.0;4.1;0.4;0.2;-4.9;1.0;6.4;26.4;56.7;6.8
+Tremont Waters;WAS;24;5.94;175;Louisiana State;USA;2019;2;51;3.0;3.3;1.3;2.3;-17.1;0.0;7.7;15.0;35.7;17.9
+Carsen Edwards;DET;24;5.98;200;Purdue;USA;2019;2;33;4.0;5.8;1.5;3.5;-5.9;2.2;4.4;17.9;37.8;25.0
+Chris Chiozza;GSW;26;5.98;175;Florida;USA;Undrafted;Undrafted;Undrafted;34.0;2.0;1.1;1.9;-7.9;2.3;7.3;13.2;40.7;26.4
+D.J. Augustin;LAL;34;5.98;183;University of Texas at Austin;USA;2008;1;9;55.0;5.3;1.2;1.9;-10.6;1.2;6.5;13.9;61.0;17.6
+Jordan McLaughlin;MIN;26;5.98;185;Southern California;USA;Undrafted;Undrafted;Undrafted;62.0;3.8;1.5;2.9;2.4;2.3;7.5;11.5;53.5;25.8
+Keifer Sykes;IND;28;5.98;167;Green Bay;USA;Undrafted;Undrafted;Undrafted;32.0;5.6;1.4;1.9;-4.5;1.4;6.9;17.4;45.6;16.2
+McKinley Wright IV;MIN;23;5.98;192;Colorado;USA;Undrafted;Undrafted;Undrafted;5.0;1.0;0.0;0.6;-25.8;0.0;0.0;8.2;83.3;23.1
+Isaiah Thomas;CHA;33;5.9;185;Washington;USA;2011;2;60;22.0;8.4;1.3;1.5;-1.3;1.2;7.1;24.5;51.6;15.5
+Aaron Holiday;PHX;25;6.0;185;UCLA;USA;2018;1;23;63.0;6.3;1.9;2.4;-1.4;2.3;9.2;18.2;54.4;22.3
+Brandon Goodwin;CLE;26;6.0;180;Florida Gulf Coast;USA;Undrafted;Undrafted;Undrafted;36.0;4.8;1.9;2.5;-6.3;2.8;11.0;17.7;50.1;27.8
+Carlik Jones;DEN;24;6.0;174;Louisville;USA;Undrafted;Undrafted;Undrafted;5.0;0.8;0.6;1.0;-33.1;4.2;6.9;22.0;20.2;41.7
+Chris Paul;PHX;37;6.0;175;Wake Forest;USA;2005;1;4;65.0;14.7;4.4;10.8;10.0;1.1;11.3;19.7;58.1;43.4
+Darren Collison;LAL;34;6.0;160;UCLA;USA;2009;1;21;3.0;1.3;1.3;0.7;-18.4;0.0;9.1;7.7;28.6;6.3
+Davion Mitchell;SAC;23;6.0;202;Baylor;USA;2021;1;9;75.0;11.5;2.2;4.2;-6.0;1.5;6.2;20.2;48.9;23.5
+Derrick Walton Jr.;DET;27;6.0;185;Michigan;USA;Undrafted;Undrafted;Undrafted;3.0;6.3;3.3;7.0;0.5;1.5;6.8;14.2;34.2;26.9
+Ish Smith;WAS;33;6.0;175;Wake Forest;USA;Undrafted;Undrafted;Undrafted;65.0;6.3;2.2;3.8;-6.7;2.1;10.0;19.5;46.5;31.8
+Jose Alvarado;NOP;24;6.0;179;Georgia Tech;USA;Undrafted;Undrafted;Undrafted;54.0;6.1;1.9;2.8;7.3;2.9;9.4;17.4;52.0;26.1
+Kemba Walker;NYK;32;6.0;184;Connecticut;USA;2011;1;9;37.0;11.6;3.0;3.5;-9.1;1.4;9.9;20.2;53.7;22.0
+Kyle Lowry;MIA;36;6.0;196;Villanova;USA;2006;1;24;63.0;13.4;4.5;7.5;5.9;1.6;11.6;17.8;60.0;32.1
+Patty Mills;BKN;33;6.0;180;St. Mary's;Australia;2009;2;55;81.0;11.4;1.9;2.3;1.5;0.8;5.5;16.0;56.3;10.6
+Tim Frazier;CLE;31;6.0;170;Penn State;USA;Undrafted;Undrafted;Undrafted;12.0;3.3;1.6;2.8;-17.5;2.4;6.6;13.7;39.8;25.4
+Trey Burke;DAL;29;6.0;185;Michigan;USA;2013;1;9;42.0;5.1;0.8;1.4;-0.5;0.9;6.4;25.0;47.5;21.9
+Tyus Jones;MEM;26;6.0;196;Duke;USA;2015;1;24;73.0;8.7;2.4;4.4;7.6;1.0;9.7;16.4;54.4;28.5
+Zavier Simpson;OKC;25;6.0;190;Michigan;USA;Undrafted;Undrafted;Undrafted;4.0;11.0;5.3;7.5;-26.5;1.0;11.4;15.8;40.6;25.0
+Cameron Payne;PHX;27;6.1;183;Murray State;USA;2015;1;14;58.0;10.8;3.0;4.9;6.3;1.8;10.9;23.5;50.0;31.8
+Cassius Winston;WAS;24;6.1;185;Michigan State;USA;2020;2;53;7.0;2.0;0.1;1.0;-3.4;0.0;2.7;18.4;54.9;28.0
+Cat Barber;ATL;27;6.1;173;North Carolina State;USA;2016;;;3.0;0.0;1.0;1.0;34.6;9.1;28.6;21.9;0.0;20.0
+Collin Sexton;CLE;23;6.1;190;Alabama;USA;2018;1;8;11.0;16.0;3.3;2.1;-5.8;4.1;6.6;26.4;52.3;12.5
+Darius Garland;CLE;22;6.1;192;Vanderbilt;USA;2019;1;5;68.0;21.7;3.3;8.6;6.6;1.7;7.4;27.2;57.6;37.8
+Dennis Schroder;HOU;28;6.1;172;None;Germany;2013;1;17;64.0;13.5;3.3;4.6;-1.0;1.8;9.7;22.3;53.9;25.6
+Devon Dotson;CHI;22;6.1;185;Kansas;USA;Undrafted;Undrafted;Undrafted;11.0;2.6;0.8;1.4;-2.4;1.1;10.5;15.6;53.8;28.3
+Devonte' Graham;NOP;27;6.1;195;Kansas;USA;2018;2;34;76.0;11.9;2.3;4.2;0.3;1.7;6.4;19.1;51.4;21.0
+Donovan Mitchell;UTA;25;6.1;215;Louisville;USA;2017;1;13;67.0;25.9;4.2;5.3;5.9;2.4;9.6;32.2;57.2;26.7
+Eric Bledsoe;POR;32;6.1;214;Kentucky;USA;2010;1;18;54.0;9.9;3.4;4.2;-1.2;2.0;10.5;19.8;51.4;25.1
+Fred VanVleet;TOR;28;6.1;197;Wichita State;USA;Undrafted;Undrafted;Undrafted;65.0;20.3;4.4;6.7;3.7;1.6;10.0;23.3;55.2;26.6
+Jalen Brunson;DAL;25;6.1;190;Villanova;USA;2018;2;33;79.0;16.3;3.9;4.8;4.4;1.7;10.5;21.5;58.3;23.7
+Jevon Carter;MIL;26;6.1;200;West Virginia;USA;2018;2;32;66.0;4.2;1.7;1.5;-3.0;1.4;9.7;13.5;53.1;14.8
+Justin Robinson;DET;24;6.1;195;Virginia Tech;USA;2019;;;25.0;3.1;0.8;1.3;-17.5;1.1;5.1;15.3;40.4;17.5
+Kevin Pangos;CLE;29;6.1;179;Gonzaga;Canada;Undrafted;Undrafted;Undrafted;24.0;1.6;0.5;1.3;-12.1;1.2;5.7;14.3;40.8;24.6
+Kira Lewis Jr.;NOP;21;6.1;170;Alabama;USA;2020;1;13;24.0;5.9;1.6;2.0;-14.1;2.3;8.3;20.9;46.6;23.9
+Kyle Guy;MIA;24;6.1;167;Virginia;USA;2019;2;55;19.0;3.9;0.9;0.9;-13.6;2.0;6.9;18.2;52.6;14.9
+Langston Galloway;MIL;30;6.1;200;St. Joseph's (PA);USA;Undrafted;Undrafted;Undrafted;7.0;2.0;2.6;1.7;-6.6;2.3;10.6;11.8;26.9;15.6
+Lindell Wigginton;MIL;24;6.1;189;Iowa State;Canada;2019;;;19.0;4.2;1.3;1.2;-11.8;1.5;10.6;18.3;52.4;16.7
+Malachi Flynn;TOR;24;6.1;175;San Diego State;USA;2020;1;29;44.0;4.3;1.4;1.6;-2.6;1.6;9.7;15.7;48.8;18.5
+Mike Conley;UTA;34;6.1;175;Ohio State;USA;2007;1;4;72.0;13.7;3.0;5.3;7.7;2.3;7.9;20.2;57.2;28.1
+Miles McBride;NYK;21;6.1;195;West Virginia;USA;2021;2;36;40.0;2.2;1.1;1.0;13.0;1.1;9.7;13.7;39.3;15.9
+Patrick Beverley;MIN;33;6.1;180;Arkansas;USA;2009;2;42;58.0;9.2;4.1;4.6;3.7;3.8;11.9;15.8;53.9;24.9
+Payton Pritchard;BOS;24;6.1;195;Oregon;USA;2020;1;26;71.0;6.2;1.9;2.0;2.2;3.1;9.3;18.0;57.8;22.2
+Rajon Rondo;CLE;36;6.1;180;Kentucky;USA;2006;1;21;39.0;4.8;2.8;4.4;-7.8;2.0;11.8;15.2;49.6;36.6
+Sharife Cooper;ATL;21;6.1;176;Auburn;USA;2021;2;48;13.0;0.5;0.4;0.4;-43.9;0.0;14.7;20.2;25.0;31.3
+T.J. McConnell;IND;30;6.1;190;Arizona;USA;2015;0;;27.0;8.5;3.3;4.9;-5.5;2.9;11.0;15.7;52.5;28.7
+Terry Rozier;CHA;28;6.1;190;Louisville;USA;2015;1;16;73.0;19.3;4.3;4.5;1.4;2.1;10.1;22.7;56.6;19.7
+Trae Young;ATL;23;6.1;164;Oklahoma;USA;2018;1;5;76.0;28.4;3.7;9.7;2.3;1.9;8.7;33.3;60.3;44.2
+Tre Jones;SAS;22;6.1;185;Duke;USA;2020;2;41;69.0;6.0;2.2;3.4;-0.5;2.4;10.3;15.1;54.5;28.0
+Alperen Sengun;HOU;19;6.94;243;None;Turkey;2021;1;16;72.0;9.6;5.5;2.6;-10.2;8.9;17.4;21.4;55.2;19.3
+Andre Drummond;BKN;28;6.94;279;Connecticut;USA;2012;1;9;73.0;7.9;9.3;1.8;2.4;15.5;30.5;18.1;57.4;13.0
+Anthony Davis;LAL;29;6.94;253;Kentucky;USA;2012;1;1;40.0;23.2;9.9;3.1;-3.0;7.2;19.6;26.3;57.8;14.7
+Arnoldas Kulboka;CHA;24;6.94;209;None;Lithuania;2018;2;55;2.0;0.0;0.0;0.0;-100.0;0.0;0.0;7.1;0.0;0.0
+Bobby Portis;MIL;27;6.94;250;Arkansas;USA;2015;1;22;72.0;14.6;9.1;1.2;6.3;8.5;21.8;20.7;57.1;6.1
+Clint Capela;ATL;28;6.94;256;None;Switzerland;2014;1;25;74.0;11.1;11.9;1.2;3.3;13.3;28.4;14.9;60.4;6.2
+D.J. Wilson;TOR;26;6.94;231;Michigan/USA;USA;2017;1;17;4.0;7.5;4.0;1.3;-16.5;1.7;23.8;15.9;77.3;14.7
+Danilo Gallinari;ATL;33;6.94;236;None;Italy;2008;1;6;66.0;11.7;4.7;1.5;3.4;2.1;16.1;18.2;57.9;8.6
+Davis Bertans;DAL;29;6.94;225;None;Latvia;2011;2;42;56.0;5.6;2.1;0.6;1.0;1.4;12.7;16.5;53.1;5.4
+DeMarcus Cousins;DEN;31;6.94;270;Kentucky;USA;2010;1;5;48.0;9.0;5.6;1.5;2.2;10.3;28.1;26.7;56.7;15.3
+Dwight Howard;LAL;36;6.94;265;None;USA;2004;1;1;60.0;6.2;5.9;0.6;-5.7;12.0;24.6;14.5;65.7;4.9
+Dwight Powell;DAL;30;6.94;240;Stanford;Canada;2014;2;45;82.0;8.7;4.9;1.2;2.5;9.9;13.4;13.6;72.5;8.1
+Enes Freedom;BOS;30;6.94;250;None;Turkey;2011;1;3;35.0;3.7;4.6;0.2;7.8;14.3;21.9;12.9;58.5;2.7
+Franz Wagner;ORL;20;6.94;220;Michigan;Germany;2021;1;8;79.0;15.2;4.5;2.9;-4.9;3.3;10.6;20.8;55.9;15.1
+Gorgui Dieng;ATL;32;6.94;248;Louisville;Senegal;2013;1;21;44.0;3.5;2.8;0.8;-9.2;8.3;23.8;16.4;62.4;15.5
+Greg Monroe;MIN;32;6.94;250;Georgetown;USA;2010;1;7;14.0;5.4;4.6;1.6;0.9;14.1;17.6;16.4;56.6;16.2
+Isaiah Jackson;IND;20;6.94;205;Kentucky;USA;2021;1;22;36.0;8.3;4.1;0.3;-2.8;10.9;15.7;21.4;60.7;2.7
+Jalen Smith;IND;22;6.94;215;Maryland;USA;2020;1;10;51.0;9.2;6.0;0.5;2.7;10.1;21.6;19.3;59.5;3.8
+Jamie Echenique;WAS;25;6.94;258;Rytas Vilnius;Colombia;Undrafted;Undrafted;Undrafted;1.0;0.0;0.0;0.0;-30.0;0.0;0.0;0.0;0.0;0.0
+Jarrett Allen;CLE;24;6.94;243;Texas;USA;2017;1;22;56.0;16.1;10.8;1.6;3.3;10.9;21.3;17.7;69.8;7.9
+Javin DeLaurier;MIL;24;6.94;234;Duke;USA;Undrafted;Undrafted;Undrafted;1.0;0.0;1.0;0.0;57.1;0.0;25.0;0.0;0.0;0.0
+Kai Jones;CHA;21;6.94;221;Texas;Bahamas;2021;1;19;21.0;1.0;0.5;0.2;-11.1;4.5;11.4;15.0;62.8;10.3
+Kevin Durant;BKN;33;6.94;240;Texas;USA;2007;1;2;55.0;29.9;7.4;6.4;6.5;1.5;16.6;31.0;63.4;27.4
+Luka Garza;DET;23;6.94;243;Iowa;USA;2021;2;52;32.0;5.8;3.1;0.6;-6.3;13.0;11.6;19.5;53.5;8.6
+Maxi Kleber;DAL;30;6.94;240;None;Germany;Undrafted;Undrafted;Undrafted;59.0;7.0;5.9;1.2;3.9;4.7;18.2;13.1;53.7;6.7
+Micah Potter;DET;24;6.94;248;Wisconsin;USA;Undrafted;Undrafted;Undrafted;3.0;4.0;3.0;0.0;-56.4;9.5;12.5;14.8;50.5;0.0
+Michael Porter Jr.;DEN;24;6.94;218;Missouri;USA;2018;1;14;9.0;9.9;6.6;1.9;9.8;3.5;17.2;19.2;41.6;8.5
+Mike Muscala;OKC;30;6.94;240;Bucknell;USA;2013;2;44;43.0;8.0;3.0;0.5;1.8;3.2;16.6;19.8;63.0;6.0
+Nathan Knight;MIN;24;6.94;253;William & Mary;USA;Undrafted;Undrafted;Undrafted;37.0;3.7;2.3;0.6;3.6;11.4;17.4;20.3;60.3;12.6
+Nikola Vucevic;CHI;31;6.94;260;Southern California;Montenegro;2011;1;16;73.0;17.6;11.0;3.2;-1.6;6.0;27.4;24.4;53.3;15.3
+Norvel Pelle;UTA;29;6.94;231;Iona;Antigua and Barbuda;Undrafted;Undrafted;Undrafted;3.0;2.0;2.0;0.0;-54.2;15.0;15.8;15.2;60.0;0.0
+Richaun Holmes;SAC;28;6.94;235;Bowling Green;USA;2015;2;37;45.0;10.4;7.0;1.1;-5.8;8.2;19.8;15.3;68.9;6.8
+Serge Ibaka;MIL;32;6.94;235;None;Congo;2008;1;24;54.0;6.8;4.6;0.9;-3.0;7.0;19.7;17.2;57.9;8.4
+Thomas Bryant;WAS;24;6.94;248;Indiana;USA;2017;2;42;27.0;7.4;4.0;0.9;-9.1;6.0;18.7;18.8;60.7;8.3
+Tony Bradley;CHI;24;6.94;248;North Carolina;USA;2017;1;28;55.0;3.0;3.4;0.5;5.2;12.3;19.6;12.8;60.0;6.5
+Wendell Carter Jr.;ORL;23;6.94;270;Duke;USA;2018;1;7;62.0;15.0;10.5;2.8;-3.7;7.4;26.0;20.6;60.1;15.0
+Cody Zeller;POR;29;6.98;240;Indiana;USA;2013;1;4;27.0;5.2;4.6;0.8;-2.1;12.8;21.2;15.3;62.7;8.7
+Damian Jones;SAC;27;6.98;245;Vanderbilt;USA;2016;1;30;56.0;8.1;4.4;1.2;-6.8;7.4;16.4;16.3;70.1;10.6
+Deandre Ayton;PHX;23;6.98;250;Arizona;Bahamas;2018;1;1;58.0;17.2;10.2;1.4;9.6;9.3;24.1;21.7;65.6;7.1
+DeAndre Jordan;PHI;33;6.98;265;Texas A&M;USA;2008;2;35;48.0;4.3;5.5;0.4;-10.8;12.7;26.2;13.2;64.1;5.1
+Domantas Sabonis;SAC;26;6.98;240;Gonzaga;Lithuania;2016;1;11;62.0;18.9;12.1;5.2;-0.6;9.2;26.4;22.1;63.7;23.9
+Evan Mobley;CLE;21;6.98;215;Southern California;USA;2021;1;3;69.0;15.0;8.3;2.5;1.7;6.3;17.4;20.1;54.9;11.7
+Giannis Antetokounmpo;MIL;27;6.98;242;None;Greece;2013;1;15;67.0;29.9;11.6;5.8;8.0;6.0;26.7;34.0;63.3;30.4
+Jaren Jackson Jr.;MEM;22;6.98;242;Michigan State;USA;2018;1;4;78.0;16.3;5.8;1.1;7.9;5.0;14.5;24.8;53.5;5.8
+Jaxson Hayes;NOP;22;6.98;220;Texas;USA;2019;1;8;70.0;9.3;4.5;0.6;0.5;8.0;14.6;15.9;68.0;4.7
+Jock Landale;SAS;26;6.98;255;St. Mary's;Australia;Undrafted;Undrafted;Undrafted;54.0;4.9;2.6;0.8;-1.1;9.4;11.8;17.2;59.7;11.5
+Jonas Valanciunas;NOP;30;6.98;265;None;Lithuania;2011;1;5;74.0;17.8;11.4;2.6;1.2;10.0;28.0;23.8;61.7;13.7
+Jusuf Nurkic;POR;27;6.98;290;None;Bosnia and Herzegovina;2014;1;16;56.0;15.0;11.1;2.8;-0.1;10.1;28.3;23.3;58.6;16.0
+Karl-Anthony Towns;MIN;26;6.98;248;Kentucky;USA;2015;1;1;74.0;24.6;9.8;3.6;5.3;7.4;21.0;27.2;64.0;17.7
+Kelly Olynyk;DET;31;6.98;240;Gonzaga;Canada;2013;1;13;40.0;9.1;4.4;2.8;-4.9;6.7;17.0;20.7;56.1;21.4
+LaMarcus Aldridge;BKN;36;6.98;250;University of Texas at Austin;USA;2006;1;2;47.0;12.9;5.5;0.9;0.1;7.1;16.0;21.9;60.4;6.2
+Lauri Markkanen;CLE;25;6.98;240;Arizona;Finland;2017;1;7;61.0;14.8;5.7;1.3;3.9;3.3;14.7;19.2;58.2;6.2
+Marko Simonovic;CHI;22;6.98;220;None;Montenegro;2020;2;44;9.0;1.9;1.1;0.0;1.2;12.2;11.9;24.7;42.8;0.0
+Marvin Bagley III;DET;23;6.98;235;Duke;USA;2018;1;2;48.0;11.3;7.0;0.8;-5.6;8.4;20.0;19.1;55.1;4.9
+Mason Plumlee;CHA;32;6.98;254;Duke;USA;2013;1;22;73.0;6.5;7.7;3.1;0.9;9.1;20.5;11.7;60.3;16.5
+Moritz Wagner;ORL;25;6.98;245;Michigan;Germany;2018;1;25;63.0;9.0;3.7;1.4;-7.2;4.1;19.0;22.4;62.3;15.1
+Myles Turner;IND;26;6.98;250;Texas;USA;2015;1;11;42.0;12.9;7.1;1.0;-0.3;5.2;18.8;17.3;61.5;5.3
+Nerlens Noel;NYK;28;6.98;220;Kentucky;USA;2013;1;6;25.0;3.4;5.6;0.9;-5.7;8.4;16.1;7.2;58.1;6.0
+Nic Claxton;BKN;23;6.98;215;Georgia;USA;2019;2;31;47.0;8.7;5.6;0.9;-0.4;9.8;15.7;15.0;67.2;6.6
+Nikola Jokic;DEN;27;6.98;284;None;Serbia;2014;2;41;74.0;27.1;13.8;7.9;8.4;9.0;31.3;30.9;66.1;38.8
+Omer Yurtseven;MIA;24;6.98;275;Georgetown;Turkey;Undrafted;Undrafted;Undrafted;56.0;5.3;5.3;0.9;5.3;12.0;29.3;19.0;54.6;10.5
+Petr Cornelie;DEN;26;6.98;220;None;France;2016;2;53;13.0;1.1;1.1;0.2;5.8;15.9;21.9;20.8;41.8;11.5
+Santi Aldama;MEM;21;6.98;215;Loyola-Maryland;Spain;2021;1;30;32.0;4.1;2.7;0.7;1.3;7.7;15.0;17.4;45.2;8.0
+Steven Adams;MEM;28;6.98;265;Pittsburgh;New Zealand;2013;1;12;76.0;6.9;10.0;3.4;8.3;15.9;19.8;11.8;56.0;15.5
+Willy Hernangomez;NOP;28;6.98;250;None;Spain;2015;2;35;50.0;9.1;6.8;1.3;-1.6;15.3;24.0;21.1;58.2;11.3
+Zach Collins;SAS;24;6.98;250;Gonzaga;USA;2017;1;10;28.0;7.8;5.5;2.2;3.1;8.5;19.7;18.4;59.4;17.0
+Ahmad Caver;IND;25;6.2;174;Old Dominion;USA;2019;;;1.0;2.0;0.0;0.0;133.3;0.0;0.0;50.0;100;0.0
+Bones Hyland;DEN;21;6.2;169;Virginia Commonwealth;USA;2021;1;26;69.0;10.1;2.7;2.8;1.7;1.1;13.3;23.1;55.8;22.0
+Brandon Knight;DAL;30;6.2;182;Kentucky;USA;2011;1;8;5.0;6.4;1.6;1.6;-3.6;0.0;9.8;21.6;56.1;20.0
+Brandon Williams;POR;22;6.2;190;Arizona;USA;Undrafted;Undrafted;Undrafted;24.0;12.9;3.1;3.9;-20.4;2.6;8.9;24.6;47.6;23.5
+Bryn Forbes;DEN;28;6.2;205;Michigan State;USA;Undrafted;Undrafted;Undrafted;75.0;8.8;1.2;1.0;-0.5;0.7;6.3;20.1;57.4;8.6
+Damian Lillard;POR;31;6.2;195;Weber State;USA;2012;1;6;29.0;24.0;4.1;7.3;-1.8;1.2;10.4;28.8;55.0;32.1
+De'Anthony Melton;MEM;24;6.2;200;Southern California;USA;2018;2;46;73.0;10.8;4.5;2.7;5.6;3.4;15.0;20.5;52.9;15.7
+Dennis Smith Jr.;POR;24;6.2;205;North Carolina State;USA;2017;1;9;37.0;5.6;2.4;3.6;-9.8;2.9;10.7;17.3;47.4;31.1
+Derrick Rose;NYK;33;6.2;200;Memphis;USA;2008;1;1;26.0;12.0;3.0;4.0;5.8;3.2;8.0;21.7;54.1;26.6
+Devin Cannady;ORL;26;6.2;183;Princeton;USA;2019;;;5.0;10.0;1.2;2.0;-2.6;0.6;3.2;15.6;53.1;10.2
+Hassani Gravett;ORL;25;6.2;187;South Carolina;USA;2019;;;8.0;6.3;2.6;2.5;-1.8;0.6;11.4;13.0;62.9;17.7
+Jaysean Paige;DET;27;6.2;200;West Virginia;USA;Undrafted;Undrafted;Undrafted;1.0;0.0;1.0;1.0;-69.6;0.0;9.1;21.1;0.0;33.3
+Kyrie Irving;BKN;30;6.2;195;Duke;Australia;2011;1;1;29.0;27.4;4.4;5.8;5.2;1.5;9.6;28.3;59.2;23.5
+Lou Williams;ATL;35;6.2;175;None;USA;2005;2;45;56.0;6.3;1.6;1.9;0.8;2.0;8.4;21.5;50.0;19.6
+Mac McClung;LAL;23;6.2;185;Texas Tech;USA;Undrafted;Undrafted;Undrafted;2.0;4.0;1.5;0.5;19.2;0.0;10.7;16.4;62.1;5.9
+Matt Mooney;NYK;27;6.2;199;Texas Tech;USA;Undrafted;Undrafted;Undrafted;1.0;0.0;0.0;0.0;-100.0;0.0;0.0;40.0;0.0;0.0
+Monte Morris;DEN;27;6.2;183;Iowa State;USA;2017;2;51;75.0;12.6;3.0;4.4;6.0;1.3;8.7;17.3;58.3;20.1
+Myles Powell;PHI;24;6.2;195;Seton Hall;USA;Undrafted;Undrafted;Undrafted;11.0;1.2;0.5;0.3;-15.1;1.9;9.8;16.3;36.4;8.8
+Raul Neto;WAS;30;6.2;180;None;Brazil;2013;2;47;70.0;7.5;1.9;3.1;-3.3;1.0;8.9;18.0;53.8;22.8
+Reggie Jackson;LAC;32;6.2;208;Boston College;USA;2011;1;24;75.0;16.8;3.6;4.8;-1.3;1.6;9.2;27.3;48.8;24.5
+Ricky Rubio;IND;31;6.2;190;None;Spain;2009;1;5;34.0;13.1;4.1;6.6;9.1;1.5;12.2;23.4;48.8;34.8
+Saben Lee;DET;23;6.2;183;Vanderbilt;USA;2020;2;38;37.0;5.6;2.4;2.9;-5.7;2.6;11.3;16.9;49.9;27.4
+Seth Curry;BKN;31;6.2;185;Duke;USA;Undrafted;Undrafted;Undrafted;64.0;15.0;3.1;3.6;4.5;1.0;8.2;18.2;61.5;16.2
+Stephen Curry;GSW;34;6.2;185;Davidson;USA;2009;1;7;64.0;25.5;5.2;6.3;10.7;1.5;12.6;29.3;60.1;28.6
+Tyrell Terry;MEM;21;6.2;160;Stanford;USA;2020;2;31;2.0;1.0;0.0;0.0;-6.9;0.0;0.0;11.1;100;0.0
+Tyrese Maxey;PHI;21;6.2;200;Kentucky;USA;2020;1;21;75.0;17.5;3.2;4.3;3.6;1.0;8.0;19.9;59.4;19.1
+Xavier Moon;LAC;27;6.2;165;Morehead State;USA;Undrafted;Undrafted;Undrafted;10.0;5.8;1.4;2.4;1.4;1.4;7.2;17.7;54.5;24.5
+Anfernee Simons;POR;23;6.3;181;None;USA;2018;1;24;57.0;17.3;2.6;3.9;-2.5;1.5;7.5;24.4;58.3;21.9
+Armoni Brooks;TOR;24;6.3;195;Houston;USA;2019;;;54.0;5.3;1.9;1.1;-3.8;2.1;9.7;15.9;48.3;10.5
+Avery Bradley;LAL;31;6.3;180;University of Texas at Austin;USA;2010;1;19;62.0;6.4;2.2;0.8;-5.8;2.1;7.3;11.9;55.0;4.6
+Ben McLemore;POR;29;6.3;195;Kansas;USA;2013;1;7;64.0;10.2;1.6;0.9;-13.1;0.9;7.2;20.7;56.7;7.7
+Brad Wanamaker;WAS;32;6.3;210;Pittsburgh;USA;Undrafted;Undrafted;Undrafted;23.0;3.6;1.7;2.4;-6.4;1.8;10.7;14.6;47.2;24.3
+Cam Thomas;BKN;20;6.3;210;Louisiana State;Japan;2021;1;27;67.0;8.5;2.4;1.2;-6.4;1.3;11.8;21.2;51.9;10.2
+CJ McCollum;NOP;30;6.3;190;Lehigh;USA;2013;1;10;62.0;22.1;4.3;5.1;-1.9;2.4;10.1;26.9;55.3;23.8
+Cole Anthony;ORL;22;6.3;185;North Carolina;USA;2020;1;15;65.0;16.3;5.4;5.7;-5.4;1.5;14.5;24.5;51.9;28.1
+Cory Joseph;DET;30;6.3;200;Texas;Canada;2011;1;29;65.0;8.0;2.7;3.6;-6.4;1.7;9.2;14.1;57.9;22.0
+Craig Sword;WAS;28;6.3;196;Mississippi State;USA;Undrafted;Undrafted;Undrafted;3.0;2.0;0.0;0.3;8.3;0.0;0.0;12.5;75.0;10.0
+De'Aaron Fox;SAC;24;6.3;185;Kentucky;USA;2017;1;5;59.0;23.2;3.9;5.6;-4.4;1.2;9.6;28.4;54.9;25.4
+Duane Washington Jr.;IND;22;6.3;197;Ohio State;Germany;Undrafted;Undrafted;Undrafted;48.0;9.9;1.7;1.8;-5.9;0.4;8.2;21.4;52.1;12.8
+Elfrid Payton;PHX;28;6.3;195;Louisana-Lafayette;USA;2014;1;10;50.0;3.0;1.8;2.0;-2.0;3.5;11.5;17.5;39.7;25.2
+Emmanuel Mudiay;SAC;26;6.3;200;None;DRC;2015;1;7;2.0;1.5;0.0;2.0;-23.7;0.0;0.0;19.2;39.9;57.1
+Eric Gordon;HOU;33;6.3;215;Indiana;USA;2008;1;7;57.0;13.4;2.0;2.7;-5.1;0.9;5.6;18.2;61.4;13.7
+Frank Jackson;DET;24;6.3;205;Duke;USA;2017;2;31;53.0;10.6;1.6;1.0;-6.8;1.5;5.8;20.3;53.0;7.7
+Gabe Vincent;MIA;26;6.3;200;California-Santa Barbara;USA;Undrafted;Undrafted;Undrafted;68.0;8.7;1.9;3.1;3.1;1.4;6.4;17.4;55.1;19.8
+Gabe York;IND;28;6.3;190;Arizona;USA;Undrafted;Undrafted;Undrafted;2.0;4.0;1.0;2.0;-14.6;0.0;14.3;17.9;43.5;22.2
+Gary Payton II;GSW;29;6.3;195;Oregon State;USA;Undrafted;Undrafted;Undrafted;71.0;7.1;3.5;0.9;8.3;5.8;13.2;14.0;67.9;7.6
+Goran Dragic;BKN;36;6.3;190;None;Slovenia;2008;2;45;21.0;7.5;3.1;4.1;0.4;2.7;10.4;16.6;47.4;22.7
+Immanuel Quickley;NYK;23;6.3;190;Kentucky;USA;2020;1;25;78.0;11.3;3.2;3.5;6.6;1.7;11.4;21.7;54.3;24.4
+Ja Morant;MEM;22;6.3;174;Murray State;USA;2019;1;2;57.0;27.4;5.7;6.7;4.1;3.7;12.4;33.0;57.5;33.0
+Jahmi'us Ramsey;SAC;21;6.3;190;Texas Tech;USA;2020;2;43;19.0;3.2;0.7;0.4;-6.0;2.7;6.8;20.8;46.8;7.5
+Jared Butler;UTA;21;6.3;193;Baylor;USA;2021;2;40;42.0;3.8;1.1;1.5;-0.1;1.4;10.2;22.1;50.9;25.8
+Jeff Dowtin Jr.;ORL;25;6.3;177;Rhode Island;USA;Undrafted;Undrafted;Undrafted;9.0;2.1;2.0;1.1;-12.3;6.5;9.7;11.9;35.3;13.9
+Jordan Goodwin;WAS;23;6.3;200;St. Louis;USA;Undrafted;Undrafted;Undrafted;2.0;0.0;0.5;0.0;-110.0;0.0;20.0;25.0;0.0;0.0
+Josh Christopher;HOU;20;6.3;215;Arizona State;USA;2021;1;24;74.0;7.9;2.5;2.0;-9.2;3.7;10.3;20.5;53.4;17.0
+Jrue Holiday;MIL;32;6.3;205;UCLA;USA;2009;1;17;67.0;18.3;4.5;6.8;8.5;3.1;10.0;23.1;59.3;29.7
+Kris Dunn;POR;28;6.3;205;Providence;USA;2016;1;5;14.0;7.6;3.5;5.6;-12.0;2.7;12.0;17.6;48.2;33.9
+Luguentz Dort;OKC;23;6.3;215;Arizona State;Canada;Undrafted;Undrafted;Undrafted;51.0;17.2;4.2;1.7;-8.1;2.0;9.7;22.8;54.1;8.7
+Malik Monk;LAL;24;6.3;200;Kentucky;USA;2017;1;11;76.0;13.8;3.4;2.9;0.3;1.7;9.9;19.5;59.7;14.4
+Malik Newman;CLE;25;6.3;190;Kansas;USA;2018;;;1.0;8.0;1.0;1.0;8.3;0.0;10.0;43.8;68.0;100
+Matt Thomas;CHI;27;6.3;190;Iowa State;USA;Undrafted;Undrafted;Undrafted;40.0;4.0;1.3;0.5;1.1;0.7;9.6;13.7;56.4;5.9
+Mychal Mulder;MIA;28;6.3;195;Kentucky;Canada;Undrafted;Undrafted;Undrafted;17.0;4.1;1.4;0.3;-10.3;0.7;8.9;15.3;43.8;3.1
+Norman Powell;LAC;29;6.3;215;UCLA;USA;2015;2;46;45.0;19.0;3.2;2.1;-8.1;1.3;8.9;23.1;60.3;10.6
+Quinndary Weatherspoon;GSW;25;6.3;205;Mississippi State;USA;2019;2;49;11.0;2.7;1.3;0.5;-8.6;2.9;18.2;15.0;64.7;10.2
+Rayjon Tucker;MIL;24;6.3;209;Arkansas-Little Rock;USA;Undrafted;Undrafted;Undrafted;5.0;4.2;1.6;2.0;-2.7;5.1;7.6;7.5;86.9;17.2
+Russell Westbrook;LAL;33;6.3;200;UCLA;USA;2008;1;4;78.0;18.5;7.4;7.1;-4.0;3.9;16.5;26.4;51.2;31.1
+Ryan Arcidiacono;NYK;28;6.3;195;Villanova;USA;Undrafted;Undrafted;Undrafted;10.0;1.6;0.8;0.4;-8.2;0.0;10.5;8.5;66.7;9.1
+Shaq Buchanan;MEM;25;6.3;190;Murray State;USA;Undrafted;Undrafted;Undrafted;2.0;1.0;1.0;1.0;-8.7;9.1;14.3;21.4;25.0;25.0
+Tre Mann;OKC;21;6.3;178;Florida;USA;2021;1;18;60.0;10.4;2.9;1.5;-10.3;1.7;10.1;21.3;50.1;10.8
+Tyler Johnson;SAS;30;6.3;186;Fresno State;USA;Undrafted;Undrafted;Undrafted;6.0;2.8;2.0;1.2;-1.9;2.9;10.0;10.0;42.5;10.0
+Aaron Wiggins;OKC;23;6.4;190;Maryland;USA;2021;2;55;50.0;8.3;3.6;1.4;-8.1;4.0;9.8;14.9;55.6;8.3
+Anthony Edwards;MIN;20;6.4;225;Georgia;USA;2020;1;1;72.0;21.3;4.8;3.8;4.0;2.3;11.3;26.2;56.0;17.3
+Austin Rivers;DEN;29;6.4;200;Duke;USA;2012;1;10;67.0;6.0;1.7;1.3;1.9;1.4;6.3;12.3;54.6;8.2
+Ayo Dosunmu;CHI;22;6.4;200;Illinois;USA;2021;2;38;77.0;8.8;2.8;3.3;-5.0;1.3;9.0;13.8;59.6;16.4
+Bradley Beal;WAS;29;6.4;207;Florida;USA;2012;1;3;40.0;23.2;4.7;6.6;-3.5;2.6;9.9;29.7;53.9;30.9
+Bruce Brown;BKN;25;6.4;202;Miami;USA;2018;2;42;72.0;9.0;4.8;2.1;-0.3;5.6;13.0;14.6;57.5;11.4
+Buddy Hield;IND;29;6.4;220;Oklahoma;Bahamas;2016;1;6;81.0;15.6;4.4;2.8;-3.6;2.5;11.4;21.4;54.8;13.5
+Coby White;CHI;22;6.4;195;North Carolina;USA;2019;1;7;61.0;12.7;3.0;2.9;-1.2;1.1;9.9;19.5;56.4;14.7
+Daishen Nix;HOU;20;6.4;226;None;USA;Undrafted;Undrafted;Undrafted;24.0;3.2;1.4;1.7;-6.6;2.6;10.3;16.7;48.0;20.8
+Dakota Mathias;MEM;26;6.4;200;Purdue;USA;2018;;;6.0;1.0;0.3;0.2;-25.4;0.0;15.4;15.0;50.0;12.5
+D'Angelo Russell;MIN;26;6.4;193;Ohio State;USA;2015;1;2;65.0;18.1;3.3;7.1;4.7;1.1;8.9;24.6;54.4;32.0
+David Duke Jr.;BKN;22;6.4;204;Providence;USA;Undrafted;Undrafted;Undrafted;22.0;4.7;3.0;0.8;0.1;7.7;10.5;15.0;44.4;6.6
+David Johnson;TOR;21;6.4;203;Louisville;USA;2021;2;47;2.0;0.0;0.0;0.0;-75.0;0.0;0.0;14.3;0.0;0.0
+Dejounte Murray;SAS;25;6.4;180;Washington;USA;2016;1;29;68.0;21.1;8.3;9.2;1.9;3.1;19.6;26.8;53.3;38.8
+Denzel Valentine;UTA;28;6.4;220;Michigan State;USA;2016;1;14;24.0;2.9;1.8;0.5;-5.1;4.0;15.0;15.0;52.3;7.4
+Derrick White;BOS;27;6.4;190;Colorado;USA;2017;1;29;75.0;13.2;3.5;4.9;4.9;1.7;9.4;19.6;54.9;23.1
+Donte DiVincenzo;SAC;25;6.4;203;Villanova;USA;2018;1;17;42.0;9.0;4.0;2.8;-3.7;3.9;12.5;18.7;51.0;16.7
+Frank Ntilikina;DAL;23;6.4;200;None;France;2017;1;8;58.0;4.1;1.4;1.2;4.3;1.6;9.4;16.5;51.3;14.9
+Gabriel Lundberg;PHX;27;6.4;203;None;Denmark;Undrafted;Undrafted;Undrafted;4.0;3.3;1.8;2.8;18.3;4.0;11.9;19.1;34.2;26.8
+Gary Harris;ORL;27;6.4;210;Michigan State;USA;2014;1;19;61.0;11.1;2.0;1.8;-5.9;2.0;4.8;16.0;57.1;9.4
+George Hill;MIL;36;6.4;188;Indiana-Purdue Indianapolis;USA;2008;1;26;54.0;6.2;2.9;2.2;11.7;2.9;8.4;11.5;55.2;12.4
+Grayson Allen;MIL;26;6.4;198;Duke;USA;2018;1;21;66.0;11.1;3.4;1.5;5.0;1.7;9.7;14.8;60.9;7.5
+Haywood Highsmith;MIA;25;6.4;220;Wheeling Jesuit;USA;2018;;;19.0;2.3;1.4;0.3;-8.5;5.6;9.7;13.1;44.6;5.2
+Isaiah Joe;PHI;22;6.4;165;Arkansas;USA;2020;2;49;55.0;3.6;1.0;0.6;1.7;1.0;7.9;14.4;51.9;8.0
+Jaden Springer;PHI;19;6.4;202;Tennessee;USA;2021;1;28;2.0;1.0;1.0;0.0;-72.4;14.3;12.5;11.8;100;0.0
+Jae'Sean Tate;HOU;26;6.4;230;Ohio State;USA;Undrafted;Undrafted;Undrafted;78.0;11.8;5.4;2.8;-8.9;6.3;13.5;19.4;56.7;17.1
+Jalen Green;HOU;20;6.4;186;None;USA;2021;1;2;67.0;17.3;3.4;2.6;-11.3;1.5;8.8;23.4;54.7;13.2
+James Bouknight;CHA;21;6.4;190;Connecticut;USA;2021;1;11;31.0;4.6;1.7;0.8;-6.2;6.4;9.0;22.6;45.9;13.2
+JaQuori McLaughlin;DAL;24;6.4;190;California-Santa Barbara;USA;Undrafted;Undrafted;Undrafted;4.0;0.0;0.0;0.5;-34.6;0.0;0.0;6.5;0.0;20.0
+Javonte Smart;MIA;23;6.4;205;Birmingham Squadron;USA;Undrafted;Undrafted;Undrafted;17.0;3.0;1.4;0.9;-10.6;2.2;9.4;15.4;40.7;12.1
+Jaylen Nowell;MIN;22;6.4;201;Washington;USA;2019;2;43;62.0;8.5;2.0;2.1;2.8;2.2;10.0;20.5;58.1;19.7
+Joel Ayayi;WAS;22;6.4;180;Gonzaga;France;Undrafted;Undrafted;Undrafted;7.0;0.3;0.4;0.6;12.2;3.7;10.5;13.3;16.7;36.4
+Jordan Clarkson;UTA;30;6.4;194;Missouri;USA;2014;2;46;79.0;16.0;3.5;2.5;8.7;3.0;9.1;25.8;53.2;14.4
+Jordan Poole;GSW;23;6.4;194;Michigan;USA;2019;1;28;76.0;18.5;3.4;4.0;6.6;1.5;9.4;25.2;59.8;20.7
+Josh Okogie;MIN;23;6.4;213;Georgia Tech;Nigeria;2018;1;20;49.0;2.7;1.4;0.5;2.5;4.9;7.7;11.5;52.6;6.6
+Joshua Primo;SAS;19;6.4;189;Alabama;Canada;2021;1;12;50.0;5.8;2.3;1.6;-3.3;3.1;7.9;15.2;48.7;11.1
+Keljin Blevins;POR;26;6.4;200;Montana State;USA;2019;;;31.0;3.1;1.5;0.6;-27.7;4.2;9.0;16.1;41.0;8.3
+Kent Bazemore;LAL;32;6.4;195;Old Dominion;USA;Undrafted;Undrafted;Undrafted;39.0;3.4;1.8;0.9;-8.9;2.2;9.7;12.8;45.1;8.5
+Keon Johnson;POR;20;6.4;185;Tennessee;USA;2021;1;21;37.0;7.2;2.2;2.1;-19.0;3.1;8.3;20.7;45.3;17.4
+Kevin Porter Jr.;HOU;22;6.4;203;Southern California;USA;2019;1;30;61.0;15.6;4.4;6.2;-6.7;2.2;11.1;23.9;53.1;30.2
+Landry Shamet;PHX;25;6.4;190;Wichita State;USA;2018;1;26;69.0;8.3;1.8;1.6;4.9;1.0;7.2;16.0;55.0;10.4
+Lonnie Walker IV;SAS;23;6.4;204;Miami;USA;2018;1;18;70.0;12.1;2.6;2.2;-3.0;1.0;9.5;23.2;51.2;13.7
+Malik Beasley;MIN;25;6.4;187;Florida State;USA;2016;1;19;79.0;12.1;2.9;1.5;2.0;1.2;10.0;18.9;54.4;8.5
+Marcus Smart;BOS;28;6.4;220;Oklahoma State;USA;2014;1;6;71.0;12.1;3.8;5.9;9.3;1.8;9.3;17.9;54.0;24.5
+Markelle Fultz;ORL;24;6.4;209;Washington;USA;2017;1;1;18.0;10.8;2.7;5.5;-5.3;1.0;11.6;26.5;51.7;44.8
+Mason Jones;LAL;23;6.4;200;Arkansas;USA;Undrafted;Undrafted;Undrafted;4.0;6.8;2.5;1.0;22.8;2.0;14.8;18.0;62.5;12.9
+Quentin Grimes;NYK;22;6.4;210;Houston;USA;2021;1;25;46.0;6.0;2.0;1.0;-3.0;2.8;8.5;14.9;56.5;9.5
+R.J. Hampton;ORL;21;6.4;175;None;USA;2020;1;24;64.0;7.6;3.0;2.5;-14.5;1.5;12.0;18.0;48.1;17.9
+RJ Nembhard;CLE;23;6.4;200;TCU;USA;Undrafted;Undrafted;Undrafted;14.0;1.1;0.5;0.9;-8.4;4.2;5.6;16.0;38.0;34.3
+Rodney McGruder;DET;30;6.4;205;Kansas State;USA;Undrafted;Undrafted;Undrafted;51.0;5.4;2.2;0.9;-3.7;3.7;10.4;14.2;57.7;9.4
+Sam Merrill;MEM;26;6.4;205;Utah State;USA;2020;2;60;6.0;4.2;1.2;0.7;-11.1;1.2;10.7;17.8;48.5;10.8
+Shaquille Harrison;BKN;28;6.4;195;Tulsa;USA;Undrafted;Undrafted;Undrafted;2.0;2.0;2.0;1.5;-12.4;5.3;12.5;14.8;33.3;18.8
+Skylar Mays;ATL;24;6.4;205;Louisiana State;USA;2020;2;50;28.0;2.9;0.9;0.6;-12.9;2.2;9.1;14.9;58.9;12.0
+Talen Horton-Tucker;LAL;21;6.4;234;Iowa State;USA;2019;2;46;60.0;10.0;3.2;2.7;-2.2;2.4;10.0;18.9;50.3;15.3
+Terence Davis;SAC;25;6.4;201;Mississippi;USA;Undrafted;Undrafted;Undrafted;30.0;10.4;3.1;1.3;4.4;1.9;13.8;24.4;54.3;10.7
+Theo Maledon;OKC;21;6.4;175;None;France;2020;2;34;51.0;7.1;2.6;2.2;-10.5;2.0;11.8;20.1;50.0;18.8
+Trent Forrest;UTA;24;6.4;210;Florida State;USA;Undrafted;Undrafted;Undrafted;60.0;3.3;1.7;1.8;4.5;3.1;9.3;12.4;55.4;18.8
+Victor Oladipo;MIA;30;6.4;213;Indiana;USA;2013;1;2;8.0;12.4;2.9;3.5;-1.4;1.7;11.0;24.7;60.8;27.7
+Wayne Ellington;LAL;34;6.4;207;North Carolina;USA;2009;1;28;43.0;6.7;1.8;0.7;-3.8;1.2;7.8;13.5;59.3;5.5
+Wayne Selden;NYK;27;6.4;232;Kansas;USA;2016;;;3.0;1.7;0.3;0.3;-34.5;0.0;5.3;13.6;43.4;9.1
+Wesley Matthews;MIL;35;6.4;220;Marquette;USA;Undrafted;Undrafted;Undrafted;49.0;5.1;1.9;0.7;6.7;2.9;5.6;10.4;53.6;4.7
+Aaron Henry;PHI;22;6.5;210;Michigan State;USA;Undrafted;Undrafted;Undrafted;6.0;0.3;0.2;0.0;-56.0;0.0;4.8;14.9;20.0;0.0
+Aaron Nesmith;BOS;22;6.5;215;Vanderbilt;USA;2020;1;14;52.0;3.8;1.7;0.4;3.0;2.5;11.7;16.4;50.7;5.7
+Abdel Nader;PHX;28;6.5;225;Iowa State;Egypt;2016;2;58;14.0;2.4;1.9;0.5;-0.9;2.6;14.5;13.9;43.1;6.5
+Ade Murkey;SAC;24;6.5;200;Denver;USA;Undrafted;Undrafted;Undrafted;1.0;0.0;0.0;0.0;-33.3;0.0;0.0;0.0;0.0;0.0
+Admiral Schofield;ORL;25;6.5;241;Tennessee;United Kingdom;2019;2;42;38.0;3.8;2.3;0.7;-13.5;3.3;14.6;14.3;53.8;8.4
+Alex Caruso;CHI;28;6.5;186;Texas A&M;USA;Undrafted;Undrafted;Undrafted;41.0;7.4;3.6;4.0;5.1;2.9;10.1;13.0;52.8;19.4
+Austin Reaves;LAL;24;6.5;197;Oklahoma;USA;Undrafted;Undrafted;Undrafted;61.0;7.3;3.2;1.8;1.8;3.1;9.9;12.1;60.0;10.1
+Brodric Thomas;BOS;25;6.5;185;Truman State;USA;Undrafted;Undrafted;Undrafted;12.0;1.8;0.8;0.9;3.0;3.4;10.3;17.2;52.0;23.9
+Caleb Martin;MIA;26;6.5;205;Nevada;USA;Undrafted;Undrafted;Undrafted;60.0;9.2;3.8;1.1;5.7;5.4;11.4;15.8;61.1;6.8
+Cassius Stanley;DET;22;6.5;190;Duke;USA;2020;2;54;9.0;5.8;2.1;0.4;-4.3;2.8;8.4;14.8;51.6;4.3
+Chaundee Brown;ATL;23;6.5;215;Michigan;USA;Undrafted;Undrafted;Undrafted;5.0;6.2;3.2;0.8;-8.7;0.9;13.9;14.6;44.7;5.6
+Chris Duarte;IND;25;6.5;190;Oregon;Dominican Republic;2021;1;13;55.0;13.1;4.1;2.1;-2.0;2.6;11.7;20.7;53.7;11.0
+Damion Lee;GSW;29;6.5;210;Drexel;USA;Undrafted;Undrafted;Undrafted;63.0;7.4;3.2;1.0;2.8;2.2;13.6;15.6;56.1;7.2
+Damyean Dotson;NYK;28;6.5;210;Houston;USA;2017;2;44;2.0;2.0;1.0;0.5;-0.8;0.0;11.1;8.9;50.0;7.1
+DaQuan Jeffries;MEM;24;6.5;222;Tulsa;USA;Undrafted;Undrafted;Undrafted;3.0;0.7;0.7;0.3;-10.5;0.0;25.0;9.1;50.0;16.7
+David Nwaba;HOU;29;6.5;219;Cal Poly;USA;Undrafted;Undrafted;Undrafted;46.0;5.1;3.3;0.8;-9.0;6.1;17.9;15.0;56.7;8.5
+Davon Reed;DEN;27;6.5;206;Miami;USA;2017;2;32;48.0;4.4;2.3;1.1;0.3;2.1;14.0;11.7;62.4;11.5
+DeAndre' Bembry;MIL;27;6.5;210;St. Joseph's (PA);USA;2016;1;21;56.0;5.1;2.9;1.2;-0.6;4.2;10.6;11.1;60.1;8.7
+DeJon Jarreau;IND;24;6.5;185;Houston;USA;Undrafted;Undrafted;Undrafted;1.0;0.0;0.0;0.0;100.0;0.0;0.0;0.0;0.0;0.0
+Delon Wright;ATL;30;6.5;185;Utah;USA;2015;1;20;77.0;4.4;2.9;2.4;2.8;3.5;11.6;10.1;57.6;17.8
+Desmond Bane;MEM;24;6.5;215;TCU;USA;2020;1;30;76.0;18.2;4.4;2.7;6.9;1.8;11.8;22.6;59.2;13.6
+Devin Booker;PHX;25;6.5;206;Kentucky;USA;2015;1;13;68.0;26.8;5.0;4.8;9.5;2.0;11.7;31.3;57.6;21.2
+Devin Vassell;SAS;21;6.5;200;Florida State;USA;2020;1;11;71.0;12.3;4.3;1.9;1.0;2.1;12.8;18.4;54.0;9.6
+Didi Louzada;POR;22;6.5;188;None;Brazil;2019;2;35;9.0;3.9;1.9;0.6;-29.1;3.4;9.6;13.0;51.7;7.0
+Elijah Hughes;POR;24;6.5;215;Syracuse;USA;2020;2;39;36.0;3.5;1.6;0.6;-23.7;1.3;11.8;15.8;42.6;7.9
+Garrett Temple;NOP;36;6.5;195;Louisiana State;USA;Undrafted;Undrafted;Undrafted;59.0;5.2;2.4;1.3;-13.7;2.4;10.6;13.6;49.4;10.2
+Garrison Mathews;HOU;25;6.5;215;Lipscomb;USA;Undrafted;Undrafted;Undrafted;65.0;10.0;2.9;1.0;-5.9;1.8;9.3;13.7;60.2;5.2
+Gary Trent Jr.;TOR;23;6.5;209;Duke;USA;2018;2;37;70.0;18.3;2.7;2.0;3.3;1.0;7.0;21.2;54.6;8.5
+Hamidou Diallo;DET;23;6.5;202;Kentucky;USA;2018;2;45;58.0;11.0;4.8;1.3;-7.6;4.9;16.2;21.3;54.1;9.8
+Isaac Okoro;CLE;21;6.5;225;Auburn;USA;2020;1;5;67.0;8.8;3.0;1.8;3.1;3.7;6.5;12.3;58.9;8.3
+Ish Wainright;PHX;27;6.5;250;Baylor;USA;Undrafted;Undrafted;Undrafted;45.0;2.4;1.2;0.3;5.6;6.6;7.2;13.4;49.4;5.7
+Jalen Suggs;ORL;21;6.5;205;Gonzaga;USA;2021;1;5;48.0;11.8;3.6;4.4;-7.1;1.9;10.2;24.4;45.5;24.9
+James Harden;PHI;32;6.5;220;Arizona State;USA;2009;1;3;65.0;22.0;7.7;10.3;3.5;2.4;17.6;26.6;58.3;40.1
+Jarron Cumberland;POR;24;6.5;205;Cincinnati;USA;Undrafted;Undrafted;Undrafted;3.0;0.7;1.0;0.3;40.2;5.9;18.2;6.1;50.0;10.0
+Javonte Green;CHI;28;6.5;205;Radford;USA;Undrafted;Undrafted;Undrafted;65.0;7.2;4.2;0.9;1.6;6.2;12.0;11.3;63.7;5.1
+Jay Scrubb;LAC;21;6.5;220;John A. Logan;USA;2020;2;55;18.0;2.7;0.9;0.4;6.9;1.6;10.0;18.8;48.6;9.5
+Jaylen Morris;SAS;26;6.5;185;Molloy;USA;Undrafted;Undrafted;Undrafted;3.0;0.7;0.7;0.7;22.9;0.0;11.8;23.1;12.9;14.3
+Jemerrio Jones;LAL;27;6.5;175;New Mexico State;USA;2018;;;2.0;2.0;1.5;0.0;-38.0;11.8;5.6;8.3;66.7;0.0
+Jeremy Lamb;SAC;30;6.5;180;Connecticut;USA;2012;1;12;56.0;7.3;2.8;1.4;0.6;2.6;13.4;18.9;52.1;12.4
+John Konchar;MEM;26;6.5;210;Indiana-Purdue Fort Wayne;USA;Undrafted;Undrafted;Undrafted;72.0;4.8;4.6;1.5;2.7;5.9;18.2;9.7;61.5;10.9
+Josh Green;DAL;21;6.5;200;Arizona;Australia;2020;1;18;67.0;4.8;2.4;1.2;3.7;4.9;10.5;13.0;57.8;11.0
+Josh Hart;POR;27;6.5;215;Villanova;USA;2017;1;30;54.0;14.9;7.2;4.1;-4.9;3.3;18.3;18.4;61.0;19.0
+Josh Richardson;SAS;28;6.5;200;Tennessee;USA;2015;2;40;65.0;10.2;2.8;1.8;4.5;2.6;8.7;17.1;57.3;10.5
+Justin Anderson;IND;28;6.5;231;Virginia;USA;2015;1;21;16.0;6.4;2.9;2.1;-0.1;1.3;14.2;14.9;49.3;13.5
+Kelan Martin;BOS;26;6.5;230;Butler;USA;Undrafted;Undrafted;Undrafted;30.0;5.7;1.8;0.7;-6.2;3.5;8.6;18.0;48.4;7.2
+Kentavious Caldwell-Pope;WAS;29;6.5;204;Georgia;USA;2013;1;8;77.0;13.2;3.4;1.9;-4.7;1.8;9.3;18.5;56.8;9.0
+Kenyon Martin Jr.;HOU;21;6.5;215;None;USA;2020;2;52;79.0;8.8;3.8;1.3;-6.9;4.7;13.1;15.8;60.3;9.1
+Killian Hayes;DET;20;6.5;195;None;France;2020;1;7;66.0;6.9;3.2;4.2;-10.3;2.0;10.8;15.4;46.1;24.3
+Lance Stephenson;IND;31;6.5;210;Cincinnati;USA;2010;2;40;46.0;8.3;2.8;3.6;-7.0;1.4;14.9;21.9;53.6;29.8
+Luke Kennard;LAC;26;6.5;206;Duke;USA;2017;1;12;70.0;11.9;3.3;2.1;3.4;1.0;10.0;16.0;61.9;11.1
+Malcolm Brogdon;IND;29;6.5;229;Virginia;USA;2016;2;36;36.0;19.1;5.1;5.9;-0.4;2.6;12.1;24.1;55.7;27.1
+Malik Fitts;BOS;24;6.5;230;None;USA;Undrafted;Undrafted;Undrafted;15.0;1.4;1.1;0.3;-16.3;3.3;18.5;13.9;55.3;12.5
+Marcus Garrett;MIA;23;6.5;205;Kansas;USA;Undrafted;Undrafted;Undrafted;12.0;1.1;1.9;0.6;5.8;7.2;10.8;8.6;28.0;6.9
+Matisse Thybulle;PHI;25;6.5;201;Washington;USA;2019;1;20;66.0;5.7;2.3;1.1;3.8;2.6;6.4;9.5;59.4;6.3
+Max Strus;MIA;26;6.5;215;DePaul;USA;Undrafted;Undrafted;Undrafted;68.0;10.6;3.0;1.4;5.6;1.6;11.2;17.7;61.4;8.6
+Melvin Frazier Jr.;OKC;25;6.5;215;Tulane;USA;2018;2;35;3.0;10.7;4.3;0.3;-38.8;3.3;7.2;19.1;31.3;1.3
+Miye Oni;UTA;24;6.5;206;Yale;USA;2019;2;58;16.0;0.3;0.4;0.3;-33.3;2.4;11.8;9.5;26.5;17.9
+MJ Walker;PHX;24;6.5;213;Florida State;USA;Undrafted;Undrafted;Undrafted;2.0;0.0;0.5;0.5;-19.5;0.0;14.3;13.8;0.0;16.7
+Moses Moody;GSW;20;6.5;211;Arkansas;USA;2021;1;14;52.0;4.4;1.5;0.4;-4.0;2.8;9.8;14.8;57.3;5.6
+Nassir Little;POR;22;6.5;220;North Carolina;USA;2019;1;25;42.0;9.8;5.6;1.3;-0.9;5.2;15.8;15.5;57.5;7.4
+Nate Hinton;IND;23;6.5;210;Houston;USA;Undrafted;Undrafted;Undrafted;2.0;0.0;0.0;0.0;76.2;0.0;0.0;25.0;0.0;0.0
+Nickeil Alexander-Walker;UTA;23;6.5;205;Virginia Tech;Canada;2019;1;17;65.0;10.6;2.9;2.4;-3.1;2.4;10.3;23.7;47.5;16.6
+P.J. Tucker;MIA;37;6.5;245;Texas;USA;2006;2;35;71.0;7.6;5.5;2.1;6.2;5.2;14.6;11.6;59.3;10.7
+Pat Connaughton;MIL;29;6.5;209;Notre Dame;USA;2015;2;41;65.0;9.9;4.2;1.3;-0.7;2.5;13.0;13.7;62.0;6.7
+Rob Edwards;OKC;25;6.5;205;Arizona State;USA;Undrafted;Undrafted;Undrafted;2.0;1.5;1.5;0.0;-59.1;0.0;21.4;22.7;37.5;0.0
+Romeo Langford;SAS;22;6.5;216;Indiana;USA;2019;1;14;48.0;4.5;2.3;0.4;1.0;3.5;9.2;12.3;52.0;4.0
+Royce O'Neale;UTA;29;6.5;226;Baylor;USA;Undrafted;Undrafted;Undrafted;77.0;7.4;4.8;2.5;5.3;2.7;12.0;9.8;60.8;10.4
+Scottie Lewis;CHA;22;6.5;185;Florida;USA;2021;2;56;2.0;0.5;0.0;0.5;-11.8;0.0;0.0;5.9;56.8;20.0
+Shake Milton;PHI;25;6.5;205;Southern Methodist;USA;2018;2;54;55.0;8.2;2.6;2.5;-1.0;2.5;9.4;17.4;51.7;17.8
+Sterling Brown;DAL;27;6.5;219;Southern Methodist;USA;2017;2;46;49.0;3.3;3.0;0.7;2.3;3.9;18.8;12.4;49.5;7.8
+Terance Mann;LAC;25;6.5;215;Florida State;USA;2019;2;48;81.0;10.8;5.2;2.6;1.5;4.4;12.7;15.7;57.2;13.1
+Terry Taylor;IND;22;6.5;230;Austin Peay;USA;Undrafted;Undrafted;Undrafted;33.0;9.6;5.2;1.2;-6.9;12.9;11.7;15.1;65.6;8.1
+Theo Pinson;DAL;26;6.5;212;North Carolina;USA;Undrafted;Undrafted;Undrafted;19.0;2.5;1.1;0.9;-12.4;1.2;12.4;13.8;55.3;18.1
+Tim Hardaway Jr.;DAL;30;6.5;205;Michigan;USA;2013;1;24;42.0;14.2;3.7;2.2;1.3;1.0;11.4;21.4;52.0;11.5
+Ty Jerome;OKC;24;6.5;195;Virginia;USA;2019;1;24;48.0;7.1;1.6;2.3;-1.5;2.1;7.2;20.5;48.8;22.9
+Tyler Hall;NYK;25;6.5;209;Montana State;USA;Undrafted;Undrafted;Undrafted;1.0;0.0;0.0;0.0;-100.0;0.0;0.0;0.0;0.0;0.0
+Tyler Herro;MIA;22;6.5;195;Kentucky;USA;2019;1;13;66.0;20.7;5.0;4.0;5.3;1.5;13.3;27.8;56.1;20.5
+Tyrese Haliburton;IND;22;6.5;185;Iowa State;USA;2020;1;12;77.0;15.3;4.0;8.2;-6.0;2.2;9.3;18.4;59.5;33.5
+Tyrone Wallace;NOP;28;6.5;198;California;USA;2016;2;60;6.0;2.8;1.3;0.2;-9.9;0.0;13.3;13.0;38.3;1.7
+Will Barton;DEN;31;6.5;181;Memphis;USA;2012;2;40;71.0;14.7;4.8;3.9;2.0;2.0;12.8;20.5;54.8;17.1
+Xavier Sneed;UTA;24;6.5;215;Kansas State;USA;Undrafted;Undrafted;Undrafted;9.0;0.6;0.7;0.1;-3.8;4.1;11.1;10.9;25.0;3.6
+Yves Pons;MEM;23;6.5;206;Tennessee;France;Undrafted;Undrafted;Undrafted;12.0;1.1;1.0;0.1;-21.3;5.5;8.2;9.6;38.5;2.4
+Zach LaVine;CHI;27;6.5;200;UCLA;USA;2014;1;13;67.0;24.4;4.6;4.5;-0.9;1.0;12.1;28.4;60.5;20.7
+Zylan Cheatham;UTA;26;6.5;220;Arizona State;USA;Undrafted;Undrafted;Undrafted;1.0;0.0;0.0;0.0;-106.8;0.0;0.0;25.0;0.0;0.0
+Alec Burks;NYK;30;6.6;214;Colorado;USA;2011;1;12;81.0;11.7;4.9;3.0;2.3;1.9;14.8;17.1;55.9;15.8
+Andre Iguodala;GSW;38;6.6;215;Arizona;USA;2004;1;9;31.0;4.0;3.2;3.7;8.7;3.5;11.7;11.3;47.8;26.3
+Anthony Lamb;HOU;24;6.6;227;Vermont;USA;Undrafted;Undrafted;Undrafted;2.0;0.0;0.5;1.0;29.4;0.0;12.5;10.5;0.0;40.0
+BJ Johnson;ORL;26;6.6;200;La Salle;USA;Undrafted;Undrafted;Undrafted;4.0;6.5;3.8;0.0;-9.2;9.1;12.2;16.9;52.0;0.0
+Bogdan Bogdanovic;ATL;29;6.6;225;None;Serbia;2014;1;27;63.0;15.1;4.0;3.1;4.5;1.6;11.6;21.2;56.2;15.2
+Brandon Boston Jr.;LAC;20;6.6;188;Kentucky;USA;2021;2;51;51.0;6.7;2.2;1.0;-2.0;2.0;11.1;21.2;48.1;10.3
+Cade Cunningham;DET;20;6.6;220;Oklahoma State;USA;2021;1;1;64.0;17.4;5.5;5.6;-6.2;2.6;14.3;27.3;50.4;28.3
+Caris LeVert;CLE;27;6.6;205;Michigan;USA;2016;1;20;58.0;17.0;3.7;4.3;-1.8;2.4;9.7;25.2;52.5;21.9
+Chandler Hutchison;PHX;26;6.6;210;Boise State;USA;2018;1;22;6.0;0.7;0.8;0.3;27.3;0.0;16.7;11.1;69.4;10.5
+Charlie Brown Jr.;PHI;25;6.6;199;Saint Joseph's;USA;Undrafted;Undrafted;Undrafted;22.0;1.4;1.5;0.3;-3.6;6.7;8.8;10.5;34.6;4.5
+Chuma Okeke;ORL;23;6.6;229;Auburn;USA;2019;1;16;70.0;8.6;5.0;1.7;-8.8;2.4;16.5;15.9;50.1;10.4
+CJ Elleby;POR;22;6.6;200;Washington State;USA;2020;2;46;58.0;5.8;3.9;1.5;-14.3;5.2;14.1;14.3;49.1;10.9
+CJ Miles;BOS;35;6.6;220;No College;USA;2005;2;34;1.0;0.0;0.0;0.0;-100.0;0.0;0.0;0.0;0.0;0.0
+Cody Martin;CHA;26;6.6;205;Nevada;USA;2019;2;36;71.0;7.7;4.0;2.5;0.1;4.3;10.8;12.0;57.9;12.4
+Corey Kispert;WAS;23;6.6;224;Gonzaga;USA;2021;1;15;77.0;8.2;2.7;1.1;0.1;3.0;8.4;14.2;58.6;6.4
+Danny Green;PHI;35;6.6;215;North Carolina;USA;2009;2;46;62.0;5.9;2.5;1.0;3.0;2.5;9.1;12.1;56.1;6.5
+Danuel House Jr.;UTA;29;6.6;220;Texas A&M;USA;Undrafted;Undrafted;Undrafted;42.0;5.9;2.6;1.0;3.8;2.3;11.8;14.6;55.5;8.7
+DeMar DeRozan;CHI;32;6.6;220;Southern California;USA;2009;1;9;76.0;27.9;5.2;4.9;1.1;2.1;12.2;30.8;59.0;22.8
+Derrick Jones Jr.;CHI;25;6.6;210;UNLV;USA;Undrafted;Undrafted;Undrafted;51.0;5.6;3.3;0.6;2.7;6.8;12.1;11.9;63.3;4.3
+Draymond Green;GSW;32;6.6;230;Michigan State;USA;2012;2;35;46.0;7.5;7.3;7.0;7.2;3.4;20.4;14.0;58.2;32.5
+Dylan Windler;CLE;25;6.6;196;Belmont;USA;2019;1;26;50.0;2.2;1.8;0.7;0.0;4.7;14.6;11.5;51.9;11.1
+Eric Paschall;UTA;25;6.6;255;Villanova;USA;2019;2;41;58.0;5.8;1.8;0.6;-2.3;4.2;10.0;17.4;61.2;7.4
+Eugene Omoruyi;DAL;25;6.6;235;Oregon;Nigeria;Undrafted;Undrafted;Undrafted;4.0;1.8;1.8;0.5;11.9;11.1;27.8;15.6;51.8;16.7
+Evan Fournier;NYK;29;6.6;205;None;France;2012;1;20;80.0;14.1;2.6;2.1;-2.7;1.3;7.3;20.1;55.4;11.4
+Gabriel Deck;OKC;27;6.6;231;None;Argentina;Undrafted;Undrafted;Undrafted;7.0;2.6;0.9;0.7;-13.6;1.7;7.7;11.9;64.3;14.7
+Gary Clark;NOP;27;6.6;225;Cincinnati;USA;Undrafted;Undrafted;Undrafted;38.0;2.7;2.4;0.5;-2.1;5.7;17.4;11.0;54.7;6.7
+George King;DAL;28;6.6;220;Colorado;USA;2018;2;59;4.0;0.3;1.3;0.0;-62.2;0.0;25.0;15.9;8.5;0.0
+Grant Williams;BOS;23;6.6;236;Tennessee;USA;2019;1;22;77.0;7.8;3.6;1.0;4.5;3.5;10.7;12.3;63.5;5.8
+Ignas Brazdeikis;ORL;23;6.6;221;Michigan;Canada;2019;2;47;42.0;5.0;1.7;0.9;-15.7;3.8;9.0;17.2;52.0;11.0
+Isaiah Livers;DET;23;6.6;232;Michigan;USA;2021;2;42;19.0;6.4;3.0;1.1;-0.8;3.7;10.9;12.5;62.9;7.7
+Jae Crowder;PHX;31;6.6;235;Marquette;USA;2012;2;34;67.0;9.4;5.3;1.9;10.2;1.7;16.0;14.6;54.1;8.0
+James Ennis III;DEN;31;6.6;215;Cal State-Long Beach;USA;2013;2;50;7.0;4.1;1.7;0.4;0.9;8.6;12.1;20.6;55.3;8.1
+Jarrett Culver;MEM;23;6.6;195;Texas Tech;USA;2019;1;6;37.0;3.5;1.3;0.9;-2.3;3.3;10.1;19.9;43.3;13.5
+Jaylen Brown;BOS;25;6.6;223;California;USA;2016;1;3;66.0;23.6;6.1;3.5;9.8;2.4;14.5;29.8;57.4;17.3
+Joe Harris;BKN;30;6.6;220;Virginia;USA;2014;2;33;14.0;11.3;4.0;1.0;1.1;1.2;10.9;14.6;62.4;4.7
+Joe Wieskamp;SAS;22;6.6;205;Iowa;USA;2021;2;41;29.0;2.1;0.5;0.3;1.5;1.7;4.5;12.9;49.4;6.5
+Jordan Schakel;WAS;24;6.6;200;San Diego State;USA;Undrafted;Undrafted;Undrafted;4.0;1.3;2.0;0.0;7.9;6.3;18.8;19.1;21.0;0.0
+Juan Toscano-Anderson;GSW;29;6.6;209;Marquette;USA;Undrafted;Undrafted;Undrafted;73.0;4.1;2.4;1.7;2.9;3.0;14.3;14.4;56.1;18.0
+Justin Champagnie;TOR;21;6.6;206;Pittsburgh;USA;Undrafted;Undrafted;Undrafted;36.0;2.3;2.0;0.3;7.4;11.1;12.6;11.1;57.1;5.1
+Justin Holiday;SAC;33;6.6;180;Washington;USA;Undrafted;Undrafted;Undrafted;74.0;10.1;2.6;1.7;-5.1;1.4;8.0;15.6;54.3;8.6
+Justise Winslow;POR;26;6.6;222;Duke;USA;2015;1;10;48.0;5.7;4.2;1.8;2.1;6.0;17.7;17.8;47.9;15.5
+Keldon Johnson;SAS;22;6.6;220;Kentucky;USA;2019;1;29;75.0;17.0;6.1;2.1;2.1;3.1;14.8;21.0;57.4;9.1
+Kelly Oubre Jr.;CHA;26;6.6;203;Kansas;USA;2015;1;15;76.0;15.0;4.0;1.1;-0.2;3.6;10.6;22.3;56.0;6.3
+Kenrich Williams;OKC;27;6.6;210;TCU;USA;Undrafted;Undrafted;Undrafted;49.0;7.4;4.5;2.2;1.7;6.2;12.3;15.3;53.2;15.9
+Klay Thompson;GSW;32;6.6;220;Washington State;USA;2011;1;11;32.0;20.4;3.9;2.8;3.3;1.5;10.6;28.4;54.7;15.3
+Lamar Stevens;CLE;24;6.6;230;Penn State;USA;Undrafted;Undrafted;Undrafted;63.0;6.1;2.6;0.7;-1.3;4.8;11.2;16.9;54.4;6.6
+Leandro Bolmaro;MIN;21;6.6;200;None;Argentina;2020;1;23;35.0;1.4;1.2;0.6;0.2;6.2;10.7;12.2;41.9;11.8
+Lindy Waters III;OKC;24;6.6;215;Oklahoma State;USA;Undrafted;Undrafted;Undrafted;25.0;8.0;2.9;1.0;-4.7;1.2;14.0;16.6;56.2;7.8
+Lonzo Ball;CHI;24;6.6;190;UCLA;USA;2017;1;2;35.0;13.0;5.4;5.1;3.1;2.9;12.5;17.0;57.5;20.3
+Malcolm Hill;CHI;26;6.6;220;Illinois;USA;Undrafted;Undrafted;Undrafted;19.0;3.8;1.8;0.4;-7.3;5.1;11.8;11.8;61.9;5.0
+Mikal Bridges;PHX;25;6.6;209;Villanova;USA;2018;1;10;82.0;14.2;4.2;2.3;9.8;2.7;8.9;14.9;62.7;8.4
+Nik Stauskas;BOS;28;6.6;207;Michigan;Canada;2014;1;8;8.0;2.3;0.4;0.3;19.3;2.4;4.9;18.4;54.1;6.5
+Paul Watson;OKC;27;6.6;210;Fresno State;USA;Undrafted;Undrafted;Undrafted;9.0;3.4;3.0;0.9;-17.9;1.6;14.5;10.6;43.2;7.4
+PJ Dozier;DEN;25;6.6;205;South Carolina;USA;Undrafted;Undrafted;Undrafted;18.0;5.4;3.5;1.6;-12.9;3.8;14.4;14.7;46.3;13.5
+Reggie Bullock;DAL;31;6.6;205;North Carolina;USA;2013;1;25;68.0;8.6;3.5;1.2;6.6;1.7;10.6;12.8;55.8;6.0
+RJ Barrett;NYK;22;6.6;214;Duke;Canada;2019;1;3;70.0;20.0;5.8;3.0;-3.3;2.5;13.6;26.8;51.1;14.6
+Robert Woodard II;SAS;22;6.6;235;Mississippi State;USA;2020;2;40;12.0;0.6;0.9;0.3;16.7;8.6;14.6;15.8;20.7;8.6
+Semi Ojeleye;LAC;27;6.6;240;Southern Methodist;USA;2017;2;37;30.0;3.3;2.5;0.3;-16.6;5.7;11.1;12.6;43.8;3.3
+Shai Gilgeous-Alexander;OKC;23;6.6;180;Kentucky;Canada;2018;1;11;56.0;24.5;5.0;5.9;-6.4;1.7;11.4;29.8;55.7;29.3
+Solomon Hill;ATL;31;6.6;226;Arizona;USA;2013;1;23;13.0;0.6;1.8;0.9;14.3;4.3;11.5;6.4;20.0;11.7
+Spencer Dinwiddie;DAL;29;6.6;215;Colorado;USA;2014;2;38;67.0;13.7;4.2;5.2;-1.0;2.2;11.1;20.8;54.3;27.0
+Stanley Johnson;LAL;26;6.6;242;Arizona;USA;2015;1;8;48.0;6.7;3.2;1.7;-1.1;3.2;10.9;12.5;56.4;9.4
+Taurean Prince;MIN;28;6.6;218;Baylor;USA;2016;1;12;69.0;7.3;2.5;1.0;0.7;2.1;12.0;16.6;58.9;8.0
+Terrence Ross;ORL;31;6.6;206;Washington;USA;2012;1;8;63.0;10.0;2.6;1.8;-11.9;1.3;9.4;19.6;51.5;12.7
+Thanasis Antetokounmpo;MIL;29;6.6;219;None;Greece;2014;2;51;48.0;3.6;2.1;0.5;-10.1;8.3;12.9;15.5;57.7;7.1
+Tony Snell;NOP;30;6.6;213;New Mexico;USA;2013;1;20;53.0;3.5;1.9;0.5;-7.8;1.8;10.7;9.9;54.1;4.7
+Trayvon Palmer;DET;27;6.6;200;Chicago State;USA;Undrafted;Undrafted;Undrafted;1.0;0.0;2.0;0.0;-33.0;0.0;13.3;5.3;0.0;0.0
+Trevelin Queen;HOU;25;6.6;190;New Mexico State;USA;Undrafted;Undrafted;Undrafted;10.0;4.3;1.6;0.4;5.6;9.1;13.4;21.9;61.9;7.4
+Troy Brown Jr.;CHI;22;6.6;215;Oregon;USA;2018;1;15;66.0;4.3;3.1;1.0;-2.3;3.8;15.4;11.8;52.5;8.2
+Wes Iwundu;ATL;27;6.6;195;Kansas State;USA;2017;2;33;3.0;7.3;4.3;0.0;-1.4;3.6;14.3;11.1;55.7;0.0
+Alfonzo McKinnie;CHI;29;6.7;215;Wisconsin-Green Bay;USA;Undrafted;Undrafted;Undrafted;17.0;3.5;1.9;0.3;-12.9;5.9;11.5;14.8;45.7;3.4
+Amir Coffey;LAC;25;6.7;210;Minnesota;USA;Undrafted;Undrafted;Undrafted;69.0;9.0;2.9;1.8;-0.9;1.7;10.2;15.4;59.8;11.2
+Andrew Wiggins;GSW;27;6.7;197;Kansas;Canada;2014;1;1;73.0;17.2;4.5;2.2;5.8;3.6;9.5;22.4;56.0;10.9
+Anthony Gill;WAS;29;6.7;230;Virginia;USA;Undrafted;Undrafted;Undrafted;44.0;4.1;1.9;0.6;5.8;7.5;11.2;13.8;68.2;8.0
+Bojan Bogdanovic;UTA;33;6.7;226;None;Croatia;2011;2;31;69.0;18.1;4.3;1.7;4.8;2.7;10.6;23.2;59.9;8.6
+Cameron McGriff;POR;24;6.7;220;Oklahoma State;USA;Undrafted;Undrafted;Undrafted;3.0;4.7;5.0;1.0;7.3;9.8;20.9;12.2;47.0;8.6
+Carmelo Anthony;LAL;38;6.7;238;Syracuse;USA;2003;1;3;69.0;13.3;4.2;1.0;-2.9;3.4;11.6;19.5;57.9;5.6
+Cedi Osman;CLE;27;6.7;230;None;Turkey;2015;2;31;66.0;10.7;2.2;2.0;-1.8;1.7;8.0;20.6;56.3;14.4
+Dalano Banton;TOR;22;6.7;204;Nebraska;Canada;2021;2;46;64.0;3.2;1.9;1.5;1.5;4.8;12.4;15.9;46.3;19.7
+Devontae Cacok;SAS;25;6.7;240;UNC-Wilmington;USA;Undrafted;Undrafted;Undrafted;15.0;3.1;2.8;0.4;-1.6;5.8;27.9;12.2;67.5;7.3
+Dillon Brooks;MEM;26;6.7;225;Oregon;Canada;2017;2;45;32.0;18.4;3.2;2.8;11.0;3.0;8.0;28.3;51.5;14.7
+Dorian Finney-Smith;DAL;29;6.7;220;Florida;USA;Undrafted;Undrafted;Undrafted;80.0;11.0;4.7;1.9;4.4;4.7;9.5;13.8;60.4;8.0
+Doug McDermott;SAS;30;6.7;225;Creighton;USA;2014;1;11;51.0;11.3;2.3;1.3;-1.8;1.4;7.6;17.8;59.3;6.8
+Duncan Robinson;MIA;28;6.7;215;Michigan;USA;Undrafted;Undrafted;Undrafted;79.0;10.9;2.6;1.6;2.6;1.2;8.9;17.4;57.3;9.5
+Furkan Korkmaz;PHI;24;6.7;202;None;Turkey;2016;1;26;67.0;7.6;2.6;1.9;0.8;1.5;10.4;17.0;50.2;12.9
+Georges Niang;PHI;29;6.7;230;Iowa State;USA;2016;2;50;76.0;9.2;2.7;1.3;1.9;1.4;9.7;16.0;59.4;9.0
+Georgios Kalaitzakis;OKC;23;6.7;192;None;Greece;2021;2;60;13.0;6.6;1.6;0.9;-29.3;2.6;7.4;20.0;53.6;9.0
+Gordon Hayward;CHA;32;6.7;225;Butler;USA;2010;1;9;49.0;15.9;4.6;3.6;-0.4;2.2;11.4;20.2;57.0;16.0
+Greg Brown III;POR;20;6.7;206;Texas;USA;2021;2;43;48.0;4.7;2.8;0.7;-17.6;5.7;15.0;16.8;51.5;8.7
+Herbert Jones;NOP;23;6.7;206;Alabama;USA;2021;2;35;78.0;9.5;3.8;2.1;2.0;4.1;8.6;13.6;57.3;9.7
+Jabari Parker;BOS;27;6.7;245;Duke;USA;2014;1;2;12.0;4.4;2.3;0.5;-0.8;4.2;18.0;19.1;63.2;9.4
+James Johnson;BKN;35;6.7;240;Wake Forest;USA;2009;1;16;62.0;5.5;3.5;2.1;-1.6;4.1;12.7;13.6;51.3;15.3
+Jimmy Butler;MIA;32;6.7;230;Marquette;USA;2011;1;30;57.0;21.4;5.9;5.5;6.1;5.5;12.5;26.0;59.2;26.4
+Joe Johnson;BOS;41;6.7;240;Arkansas;USA;2001;1;10;1.0;2.0;0.0;0.0;-100.0;0.0;0.0;20.0;100;0.0
+Jonathan Kuminga;GSW;19;6.7;225;None;DRC;2021;1;7;70.0;9.3;3.3;0.9;1.9;4.7;13.9;22.7;60.0;8.7
+Jordan Bell;CHI;27;6.7;216;Oregon;USA;2017;2;38;1.0;0.0;1.0;0.0;25.0;50.0;0.0;0.0;0.0;0.0
+Juwan Morgan;BOS;25;6.7;232;Indiana;USA;Undrafted;Undrafted;Undrafted;2.0;2.5;2.0;0.5;-26.2;6.1;6.5;4.0;83.3;4.3
+Kessler Edwards;BKN;21;6.7;203;Pepperdine;USA;2021;2;44;48.0;5.9;3.6;0.6;-3.3;4.3;12.4;13.2;51.6;4.0
+Kevin Huerter;ATL;23;6.7;198;Maryland;USA;2018;1;19;74.0;12.1;3.4;2.7;3.8;1.4;9.8;16.9;57.0;12.5
+Kevin Knox II;ATL;22;6.7;215;Kentucky;USA;2018;1;9;30.0;3.1;1.5;0.3;-15.1;5.5;12.7;18.7;49.1;7.7
+Khris Middleton;MIL;30;6.7;222;Texas A&M;USA;2012;2;39;66.0;20.1;5.4;5.4;5.4;1.9;13.6;25.5;57.7;24.6
+LaMelo Ball;CHA;20;6.7;180;None;USA;2020;1;3;75.0;20.1;6.7;7.6;1.5;4.2;15.7;27.1;55.4;34.1
+Larry Nance Jr.;NOP;29;6.7;245;Wyoming;USA;2015;1;27;46.0;7.0;5.4;1.8;-1.9;6.9;17.3;12.8;59.0;11.5
+Louis King;SAC;23;6.7;205;Oregon;USA;Undrafted;Undrafted;Undrafted;10.0;4.5;1.2;0.9;-11.9;0.0;11.5;19.5;43.8;12.5
+Luka Doncic;DAL;23;6.7;230;None;Slovenia;2018;1;3;65.0;28.4;9.1;8.7;3.5;2.5;23.0;36.8;57.1;45.8
+Matt Ryan;BOS;25;6.7;215;Tennessee-Chattanooga;USA;Undrafted;Undrafted;Undrafted;1.0;3.0;0.0;0.0;25.0;0.0;0.0;35.7;30.0;0.0
+Maurice Harkless;SAC;29;6.7;220;St. John's (NY);USA;2012;1;15;47.0;4.6;2.4;0.5;-4.2;1.4;11.4;11.2;56.1;3.5
+Miles Bridges;CHA;24;6.7;225;Michigan State;USA;2018;1;12;80.0;20.2;7.0;3.8;2.1;3.0;15.8;22.4;59.3;15.3
+Montrezl Harrell;CHA;28;6.7;240;Louisville;USA;2015;2;32;71.0;13.1;6.1;2.0;3.0;9.2;16.3;19.8;68.0;13.9
+Naji Marshall;NOP;24;6.7;220;Xavier;USA;Undrafted;Undrafted;Undrafted;55.0;5.7;2.6;1.1;-2.2;4.7;14.2;19.7;50.5;12.6
+O.G. Anunoby;TOR;24;6.7;232;Indiana;United Kingdom;2017;1;23;48.0;17.1;5.5;2.6;3.9;4.0;11.6;20.4;54.9;10.8
+Oshae Brissett;IND;24;6.7;210;Syracuse;Canada;Undrafted;Undrafted;Undrafted;67.0;9.1;5.3;1.1;-6.0;6.5;16.5;16.6;53.0;6.4
+P.J. Washington;CHA;23;6.7;230;Kentucky;USA;2019;1;12;65.0;10.3;5.2;2.3;3.5;4.4;14.2;15.4;58.8;11.2
+Patrick Williams;CHI;20;6.7;215;Florida State;USA;2020;1;4;17.0;9.0;4.1;0.9;-5.5;4.0;13.2;13.9;63.7;5.1
+Paul Millsap;PHI;37;6.7;257;Louisiana Tech;USA;2006;2;47;33.0;3.5;3.5;0.9;-3.5;9.6;18.2;15.8;45.8;12.1
+Robert Covington;LAC;31;6.7;209;Tennessee State;USA;Undrafted;Undrafted;Undrafted;71.0;8.5;5.5;1.3;0.6;3.0;16.7;13.4;57.2;6.6
+Saddiq Bey;DET;23;6.7;215;Villanova;USA;2020;1;19;82.0;16.1;5.4;2.8;-9.3;3.5;12.5;20.9;52.9;13.8
+Sam Hauser;BOS;24;6.7;217;Virginia;USA;Undrafted;Undrafted;Undrafted;26.0;2.5;1.1;0.4;-0.3;3.0;13.3;13.6;65.0;9.5
+Scottie Barnes;TOR;20;6.7;225;Florida State;USA;2021;1;4;74.0;15.3;7.5;3.5;1.8;6.8;14.1;18.7;55.2;15.0
+Scotty Hopson;OKC;32;6.7;204;Tennessee;USA;2011;0;0;1.0;4.0;1.0;1.0;-18.4;0.0;4.3;14.3;50.0;9.1
+Svi Mykhailiuk;TOR;25;6.7;205;Kansas;Ukraine;2018;2;47;56.0;4.6;1.6;0.8;-5.9;2.4;10.1;16.1;50.9;9.4
+Timothe Luwawu-Cabarrot;ATL;27;6.7;215;None;France;2016;1;24;52.0;4.4;1.6;0.8;-3.5;2.4;9.4;13.5;55.6;8.0
+Tobias Harris;PHI;29;6.7;226;Tennessee;USA;2011;1;19;73.0;17.2;6.8;3.5;3.2;3.2;16.4;21.4;56.6;15.8
+Tomas Satoransky;WAS;30;6.7;210;None;Czech Republic;2012;2;32;55.0;3.6;2.3;3.3;-8.0;2.9;11.0;12.4;46.1;28.5
+Torrey Craig;PHX;31;6.7;221;South Carolina Upstate;USA;Undrafted;Undrafted;Undrafted;78.0;6.6;4.0;1.2;-5.0;5.0;13.7;13.9;55.6;8.2
+Aaron Gordon;DEN;26;6.8;235;Arizona;USA;2014;1;4;75.0;15.0;5.9;2.5;6.2;5.7;12.9;19.4;60.2;10.9
+Aleem Ford;ORL;24;6.8;220;Leonesde Ponce;USA;Undrafted;Undrafted;Undrafted;5.0;2.8;3.0;0.4;-22.1;2.8;16.0;14.8;35.0;4.3
+Alize Johnson;NOP;26;6.8;212;Missouri State;USA;2018;2;50;23.0;1.8;2.7;0.4;-10.6;15.6;20.2;14.0;46.3;8.0
+Bismack Biyombo;PHX;29;6.8;255;None;DRC;2011;1;7;36.0;5.8;4.6;0.6;5.6;11.7;20.7;16.7;59.6;6.4
+Brandon Clarke;MEM;25;6.8;215;Gonzaga;Canada;2019;1;21;64.0;10.4;5.3;1.3;7.5;9.9;14.8;17.1;66.0;10.1
+Brandon Ingram;NOP;24;6.8;190;Duke;USA;2016;1;2;55.0;22.7;5.8;5.6;3.3;1.9;15.2;29.1;55.4;26.8
+Braxton Key;DET;25;6.8;225;Virginia;USA;Undrafted;Undrafted;Undrafted;11.0;7.2;4.5;1.0;8.0;5.8;18.7;18.4;50.8;7.7
+Cam Reddish;NYK;22;6.8;217;Duke;USA;2019;1;10;49.0;10.1;2.1;1.0;-9.8;2.3;7.5;21.3;54.3;7.8
+Cameron Johnson;PHX;26;6.8;210;North Carolina;USA;2019;1;11;66.0;12.5;4.1;1.5;6.2;2.3;12.3;16.7;62.5;7.9
+Cameron Oliver;ATL;25;6.8;239;Nevada;USA;Undrafted;Undrafted;Undrafted;2.0;11.5;3.0;1.5;-0.9;5.1;12.1;16.7;70.5;9.7
+Cheick Diallo;DET;25;6.8;219;Kansas;Mali;2016;2;33;3.0;3.7;4.0;0.0;-50.7;9.8;29.6;14.5;51.7;0.0
+Chris Silva;MIA;25;6.8;234;South Carolina;Gabon;Undrafted;Undrafted;Undrafted;10.0;2.6;3.6;0.7;-16.1;12.7;27.4;12.3;64.1;13.0
+Daniel Oturu;TOR;22;6.8;240;Minnesota;USA;2020;2;33;3.0;3.0;1.7;0.0;-36.8;3.6;14.8;12.5;54.9;0.0
+Darius Bazley;OKC;22;6.8;208;None;USA;2019;1;23;69.0;10.8;6.3;1.4;-11.3;3.4;17.6;18.0;51.5;7.8
+De'Andre Hunter;ATL;24;6.8;221;Virginia;USA;2019;1;4;53.0;13.4;3.3;1.3;0.7;1.6;9.3;19.4;54.7;6.0
+Deividas Sirvydis;DET;22;6.8;190;None;Lithuania;2019;2;37;3.0;1.0;2.0;0.3;-42.3;0.0;20.0;14.9;15.0;6.3
+Feron Hunt;NYK;22;6.8;195;Southern Methodist;USA;Undrafted;Undrafted;Undrafted;2.0;0.0;0.5;0.5;-10.1;9.1;0.0;13.6;0.0;20.0
+Harrison Barnes;SAC;30;6.8;225;North Carolina;USA;2012;1;7;77.0;16.4;5.6;2.4;-6.7;3.1;13.5;18.4;62.3;10.3
+Isaac Bonga;TOR;22;6.8;180;None;Germany;2018;2;39;15.0;0.8;0.5;0.3;-22.6;4.3;3.8;10.8;36.3;8.9
+Isaiah Roby;OKC;24;6.8;230;Nebraska;USA;2019;2;45;45.0;10.1;4.8;1.6;-8.8;7.4;14.5;18.5;60.7;11.7
+Isaiah Stewart;DET;21;6.8;250;Washington;USA;2020;1;16;71.0;8.3;8.7;1.2;-9.5;11.1;21.7;14.4;55.0;7.0
+Jake Layman;MIN;28;6.8;209;Maryland;USA;2016;2;47;34.0;2.4;1.1;0.3;-3.4;2.5;12.3;16.0;50.0;5.5
+Jalen Johnson;ATL;20;6.8;219;Duke;USA;2021;1;20;22.0;2.4;1.2;0.1;-10.0;1.6;17.5;18.3;59.0;4.5
+JaMychal Green;DEN;32;6.8;227;Alabama;USA;Undrafted;Undrafted;Undrafted;67.0;6.4;4.2;0.9;-3.5;7.3;18.7;16.8;58.7;8.4
+Jaylen Hoard;OKC;23;6.8;216;Wake Forest;France;Undrafted;Undrafted;Undrafted;7.0;14.7;12.0;2.4;-17.2;11.2;22.8;18.4;53.6;11.3
+Jayson Tatum;BOS;24;6.8;210;Duke;USA;2017;1;3;76.0;26.9;8.0;4.4;12.1;3.2;18.0;31.3;57.8;20.4
+Jeff Green;DEN;35;6.8;235;Georgetown;USA;2007;1;5;75.0;10.3;3.1;1.3;1.8;2.4;10.0;16.0;62.7;7.1
+Jerami Grant;DET;28;6.8;210;Syracuse;USA;2014;2;39;47.0;19.2;4.1;2.4;-7.8;1.7;10.8;25.3;55.6;13.0
+Jeremiah Robinson-Earl;OKC;21;6.8;242;Villanova;USA;2021;2;32;49.0;7.5;5.6;1.0;-9.8;6.1;17.2;15.2;52.6;6.9
+Joe Ingles;POR;34;6.8;220;None;Australia;Undrafted;Undrafted;Undrafted;45.0;7.2;2.9;3.5;8.2;1.0;9.9;12.9;55.1;19.5
+Jordan Nwora;MIL;23;6.8;225;Louisville;USA;2020;2;45;62.0;7.9;3.6;1.0;-3.0;3.0;14.7;18.7;50.6;7.1
+Josh Giddey;OKC;19;6.8;205;None;Australia;2021;1;6;54.0;12.5;7.8;6.4;-8.3;5.2;17.5;21.8;47.8;32.5
+Josh Jackson;SAC;25;6.8;207;Kansas;USA;2017;1;4;51.0;6.4;2.8;1.1;-8.6;2.5;14.9;19.6;49.1;10.5
+Julius Randle;NYK;27;6.8;250;Kentucky;USA;2014;1;7;72.0;20.1;9.9;5.1;-3.6;4.5;22.5;27.9;50.9;25.1
+Justin Jackson;PHX;27;6.8;220;North Carolina;USA;2017;1;15;7.0;2.1;1.0;0.3;-15.6;1.9;16.7;17.7;47.2;12.5
+Keita Bates-Diop;SAS;26;6.8;229;Ohio State;USA;2018;2;48;59.0;5.7;3.9;0.7;0.8;6.1;16.3;14.4;57.8;5.9
+Kevin Love;CLE;33;6.8;251;UCLA;USA;2008;1;5;74.0;13.6;7.2;2.2;1.5;5.1;25.8;23.9;59.4;15.3
+KZ Okpala;MIA;23;6.8;215;Stanford;USA;2019;2;32;21.0;3.7;2.0;0.7;2.7;4.4;11.8;14.1;52.1;8.2
+Marcus Morris Sr.;LAC;32;6.8;218;Kansas;USA;2011;1;14;54.0;15.4;4.4;2.1;-4.8;1.6;12.9;22.8;54.9;11.4
+Moses Wright;DAL;23;6.8;226;Georgia Tech;USA;Undrafted;Undrafted;Undrafted;4.0;1.3;0.8;0.5;-21.9;8.3;14.3;13.9;47.0;18.2
+Nicolas Batum;LAC;33;6.8;230;None;France;2008;1;25;59.0;8.3;4.3;1.7;-4.4;1.9;14.6;13.0;60.8;9.9
+Onyeka Okongwu;ATL;21;6.8;240;Southern California;USA;2020;1;6;48.0;8.2;5.9;1.1;5.5;11.7;16.3;13.7;71.4;7.8
+Otto Porter Jr.;GSW;29;6.8;198;Georgetown;USA;2013;1;3;63.0;8.2;5.7;1.5;6.8;6.0;18.9;14.5;58.1;9.7
+Paris Bass;PHX;26;6.8;200;Detroit Mercy;USA;Undrafted;Undrafted;Undrafted;2.0;3.0;2.0;0.0;0.7;20.0;22.2;36.0;43.6;0.0
+Pascal Siakam;TOR;28;6.8;230;New Mexico State;Cameroon;2016;1;27;68.0;22.8;8.5;5.3;4.8;4.6;18.2;25.7;56.5;22.4
+Paul George;LAC;32;6.8;220;Fresno State;USA;2010;1;10;31.0;24.3;6.9;5.7;4.2;1.1;17.1;32.9;53.8;28.6
+Precious Achiuwa;TOR;22;6.8;225;Memphis;Nigeria;2020;1;20;73.0;9.1;6.5;1.1;1.9;7.5;18.8;18.0;50.3;7.2
+Reggie Perry;POR;22;6.8;250;Changwon LG Sakers (Korea);USA;2020;2;57;10.0;9.2;4.7;1.2;-16.6;7.4;16.5;22.2;53.7;11.8
+Rodney Hood;LAC;29;6.8;208;Duke;USA;2014;1;23;52.0;3.1;1.5;0.7;0.8;2.1;8.1;10.6;49.3;7.4
+Rudy Gay;UTA;35;6.8;250;Connecticut;USA;2006;1;8;55.0;8.1;4.4;1.0;8.7;5.0;16.6;18.5;53.9;7.8
+Rui Hachimura;WAS;24;6.8;230;Gonzaga;Japan;2019;1;9;42.0;11.3;3.8;1.1;-7.1;2.7;14.3;20.5;57.9;8.0
+Sam Dekker;TOR;28;6.8;219;Wisconsin;USA;2015;1;18;1.0;0.0;0.0;0.0;-250.0;0.0;0.0;0.0;0.0;0.0
+Thaddeus Young;TOR;34;6.8;235;Georgia Tech;USA;2007;1;12;52.0;6.2;4.0;2.0;-0.2;8.8;15.2;16.9;54.8;17.7
+Tre Scott;CLE;25;6.8;225;Cincinnati;USA;Undrafted;Undrafted;Undrafted;2.0;3.0;1.0;0.0;19.4;7.1;8.3;20.7;50.0;0.0
+Trendon Watford;POR;21;6.8;237;Louisiana State;USA;Undrafted;Undrafted;Undrafted;48.0;7.6;4.1;1.7;-17.9;6.0;16.3;16.9;59.0;15.2
+Trevor Ariza;LAL;37;6.8;215;UCLA;USA;2004;2;43;24.0;4.0;3.4;1.1;-5.3;2.0;15.1;11.0;44.9;7.9
+Trey Murphy III;NOP;22;6.8;206;Virginia;USA;2021;1;17;62.0;5.4;2.4;0.6;0.3;4.9;12.2;14.7;55.8;6.5
+Tyler Cook;CHI;24;6.8;255;Iowa;USA;Undrafted;Undrafted;Undrafted;20.0;3.4;2.7;0.2;-7.5;8.0;20.0;12.7;64.3;2.1
+Udonis Haslem;MIA;42;6.8;235;Florida;USA;Undrafted;Undrafted;Undrafted;13.0;2.5;1.9;0.3;-9.5;4.3;23.9;18.3;49.5;7.7
+Usman Garuba;HOU;20;6.8;229;None;Spain;2021;1;23;24.0;2.0;3.5;0.7;7.0;8.3;26.3;9.1;51.0;8.4
+Vit Krejci;OKC;22;6.8;195;None;Czech Republic;2020;2;37;30.0;6.2;3.4;1.9;-12.8;2.4;12.1;12.5;52.9;11.7
+Vlatko Cancar;DEN;25;6.8;236;None;Slovenia;2017;2;49;15.0;4.1;2.1;1.1;0.8;4.1;13.3;13.1;65.7;13.9
+Xavier Tillman;MEM;23;6.8;245;Michigan State;USA;2020;2;35;53.0;4.8;3.0;1.2;-1.4;8.4;13.8;16.4;51.0;12.7
+Al Horford;BOS;36;6.9;240;Florida;Dominican Republic;2007;1;3;69.0;10.2;7.7;3.4;9.3;5.4;20.1;14.7;57.4;15.9
+Bam Adebayo;MIA;24;6.9;255;Kentucky;USA;2017;1;14;56.0;19.1;10.1;3.4;8.1;8.0;23.4;24.8;60.8;17.2
+Blake Griffin;BKN;33;6.9;250;Oklahoma;USA;2009;1;1;56.0;6.4;4.1;1.9;-4.7;6.1;16.9;16.7;51.8;15.7
+Bruno Fernando;HOU;23;6.9;240;Maryland;Angola;2019;2;34;30.0;2.9;1.8;0.2;-10.1;10.2;22.3;19.7;67.1;8.2
+Charles Bassey;PHI;21;6.9;230;Western Kentucky;Nigeria;2021;2;53;23.0;3.0;2.7;0.3;-8.8;12.4;23.3;15.2;66.0;7.0
+Chimezie Metu;SAC;25;6.9;225;Southern California;USA;2018;2;49;60.0;8.9;5.6;1.0;-5.7;2.7;22.7;18.4;54.6;7.1
+Chris Boucher;TOR;29;6.9;200;Oregon;Saint Lucia;Undrafted;Undrafted;Undrafted;80.0;9.4;6.2;0.3;5.3;9.5;18.3;17.2;57.0;2.2
+Christian Wood;HOU;26;6.9;214;UNLV;USA;Undrafted;Undrafted;Undrafted;68.0;17.9;10.1;2.3;-9.1;5.1;26.5;23.3;59.5;12.4
+Daniel Gafford;WAS;23;6.9;234;Arkansas;USA;2019;2;38;72.0;9.4;5.7;0.9;-6.9;10.7;16.9;16.0;70.8;7.1
+Daniel Theis;BOS;30;6.9;245;None;Germany;Undrafted;Undrafted;Undrafted;47.0;8.2;4.9;0.9;-3.9;6.1;15.9;16.2;59.5;6.8
+Day'Ron Sharpe;BKN;20;6.9;265;North Carolina;USA;2021;1;29;32.0;6.2;5.0;0.5;6.9;19.7;19.8;20.5;59.3;6.2
+Dean Wade;CLE;25;6.9;228;Kansas State;USA;Undrafted;Undrafted;Undrafted;51.0;5.3;2.9;1.0;2.0;3.1;12.0;10.7;58.4;7.7
+Deni Avdija;WAS;21;6.9;210;None;Israel;2020;1;9;82.0;8.4;5.2;2.0;-1.0;2.7;18.2;15.8;53.6;11.7
+Derrick Favors;OKC;30;6.9;265;Georgia Tech;USA;2010;1;3;39.0;5.3;4.7;0.6;-11.0;7.9;17.8;13.1;53.4;6.1
+Drew Eubanks;POR;25;6.9;245;Oregon State;USA;Undrafted;Undrafted;Undrafted;71.0;7.7;5.4;1.2;-12.8;9.7;19.7;17.1;63.8;10.7
+Ed Davis;CLE;33;6.9;218;North Carolina;USA;2010;1;13;31.0;0.9;2.1;0.2;4.6;7.2;23.0;6.2;63.2;5.3
+Emanuel Terry;PHX;25;6.9;220;Lincoln Memorial;USA;Undrafted;Undrafted;Undrafted;3.0;0.0;5.0;0.7;-50.3;28.6;38.9;18.9;0.0;22.2
+Freddie Gillespie;ORL;25;6.9;245;Baylor;USA;Undrafted;Undrafted;Undrafted;9.0;2.3;4.0;0.6;-13.6;9.9;18.3;10.9;41.9;6.1
+Isaiah Todd;WAS;20;6.9;219;None;USA;2021;2;31;12.0;1.7;1.0;0.3;-15.6;3.4;12.3;18.8;34.9;9.5
+Jaden McDaniels;MIN;21;6.9;185;Washington;USA;2020;1;28;70.0;9.2;4.2;1.1;0.6;3.8;11.5;14.9;55.3;6.3
+Jalen McDaniels;CHA;24;6.9;205;San Diego State;USA;2019;2;52;55.0;6.2;3.1;1.1;2.6;3.9;13.8;15.2;59.5;8.9
+Jamorko Pickett;DET;24;6.9;206;Georgetown;USA;Undrafted;Undrafted;Undrafted;13.0;3.8;2.5;0.5;0.3;3.2;14.1;13.3;49.1;5.7
+Jarred Vanderbilt;MIN;23;6.9;214;Kentucky;USA;2018;2;41;74.0;6.9;8.4;1.3;5.0;10.7;21.2;10.8;61.2;6.6
+Jericho Sims;NYK;23;6.9;250;Texas;USA;2021;2;58;41.0;2.2;4.1;0.5;6.5;10.8;18.7;6.8;67.4;5.4
+John Collins;ATL;24;6.9;226;Wake Forest;USA;2017;1;19;54.0;16.2;7.8;1.8;0.8;5.6;19.0;20.2;61.0;8.8
+JT Thor;CHA;19;6.9;203;Auburn;USA;2021;2;37;33.0;2.0;1.3;0.6;0.3;4.0;11.1;11.6;52.5;9.7
+Juancho Hernangomez;UTA;26;6.9;214;None;Spain;2016;1;15;40.0;3.3;2.5;0.5;0.5;6.3;15.5;13.3;54.2;6.4
+Kevon Looney;GSW;26;6.9;222;UCLA;USA;2015;1;30;82.0;6.0;7.3;2.0;6.0;12.0;21.0;12.0;58.6;12.7
+Khem Birch;TOR;29;6.9;233;UNLV;Canada;Undrafted;Undrafted;Undrafted;55.0;4.5;4.3;1.0;-0.1;11.2;12.8;10.8;53.4;7.4
+Killian Tillie;MEM;24;6.9;220;Gonzaga;France;Undrafted;Undrafted;Undrafted;36.0;3.3;1.7;0.6;3.4;4.0;8.5;12.8;45.2;6.1
+Kyle Anderson;MEM;28;6.9;230;UCLA;USA;2014;1;30;69.0;7.6;5.3;2.7;2.0;4.1;19.6;15.6;50.6;16.2
+Kyle Kuzma;WAS;26;6.9;221;Utah;USA;2017;1;27;66.0;17.1;8.5;3.5;-6.1;3.2;21.3;23.8;54.7;16.4
+LeBron James;LAL;37;6.9;250;None;USA;2003;1;1;56.0;30.3;8.2;6.2;-2.5;3.1;18.5;31.7;61.9;29.7
+Mamadi Diakite;OKC;25;6.9;228;Virginia;Guinea;Undrafted;Undrafted;Undrafted;13.0;4.3;4.5;0.2;-3.2;8.4;21.6;13.6;54.0;1.8
+Markieff Morris;MIA;32;6.9;245;Kansas;USA;2011;1;13;17.0;7.6;2.6;1.4;4.5;5.9;8.9;19.7;54.7;11.6
+Marquese Chriss;DAL;24;6.9;240;Washington;USA;2016;1;8;34.0;4.5;3.0;0.5;-2.1;9.6;19.7;20.5;51.8;7.9
+Naz Reid;MIN;22;6.9;264;Louisiana State;USA;Undrafted;Undrafted;Undrafted;77.0;8.3;3.9;0.9;-2.4;7.4;16.1;20.9;58.8;9.1
+Nemanja Bjelica;GSW;34;6.9;234;None;Serbia;2010;2;35;71.0;6.1;4.1;2.2;5.2;5.5;18.7;17.5;57.3;20.4
+Obi Toppin;NYK;24;6.9;220;Dayton;USA;2020;1;8;72.0;9.0;3.7;1.1;6.9;5.6;15.5;20.5;61.4;10.5
+Paul Reed;PHI;23;6.9;210;DePaul;USA;2020;2;58;38.0;3.1;2.4;0.4;-6.2;13.7;16.4;15.1;56.8;8.1
+Robert Williams III;BOS;24;6.9;237;Texas A&M;USA;2018;1;27;61.0;10.0;9.6;2.0;10.0;13.1;17.8;11.2;74.5;9.5
+Sandro Mamukelashvili;MIL;23;6.9;240;Seton Hall;Georgia;2021;2;54;41.0;3.8;2.0;0.5;-17.6;7.9;11.6;14.2;61.8;8.4
+Sekou Doumbouya;LAL;21;6.9;230;None;France;2019;1;15;2.0;7.0;3.0;0.0;67.8;11.1;18.2;28.6;71.7;0.0
+Taj Gibson;NYK;37;6.9;232;Southern California;USA;2009;1;26;52.0;4.4;4.4;0.6;3.3;8.8;13.9;9.9;60.6;5.0
+Trey Lyles;SAC;26;6.9;234;Kentucky;Canada;2015;1;12;75.0;10.5;5.1;1.2;-7.2;5.6;18.9;20.5;58.8;9.0
+Tristan Thompson;CHI;31;6.9;254;Texas-Austin;Canada;2011;1;4;57.0;6.0;5.1;0.6;-3.6;12.5;19.6;16.8;54.1;5.4
+Vernon Carey Jr.;WAS;21;6.9;270;Duke;USA;2020;2;32;7.0;2.9;1.7;0.0;-47.6;14.5;9.3;17.9;53.4;0.0
+Wenyen Gabriel;LAL;25;6.9;205;Kentucky;South Sudan;Undrafted;Undrafted;Undrafted;26.0;5.4;3.7;0.5;6.7;10.5;15.1;16.5;54.9;5.3
+Yuta Watanabe;TOR;27;6.9;215;George Washington;Japan;Undrafted;Undrafted;Undrafted;38.0;4.3;2.4;0.6;-3.9;3.5;15.8;16.1;52.4;6.7
+Zeke Nnaji;DEN;21;6.9;240;Arizona;USA;2020;1;22;41.0;6.6;3.6;0.4;-3.2;7.7;14.1;14.6;62.9;3.7
+Ziaire Williams;MEM;20;6.9;185;Stanford;USA;2021;1;10;62.0;8.1;2.1;1.0;4.2;1.7;7.1;14.4;55.9;6.2
+Aleksej Pokusevski;OKC;20;7.0;190;None;Serbia;2020;1;17;61.0;7.6;5.2;2.1;-2.5;5.4;18.9;19.5;48.5;16.1
+Alex Len;SAC;29;7.0;250;Maryland;Ukraine;2013;1;5;39.0;6.0;4.1;1.2;-5.5;7.6;16.8;16.5;57.7;10.4
+Brook Lopez;MIL;34;7.0;282;Stanford;USA;2008;1;10;13.0;12.4;4.1;0.5;-1.4;5.8;10.8;21.1;57.0;3.0
+Dewayne Dedmon;MIA;32;7.0;245;Southern California;USA;Undrafted;Undrafted;Undrafted;67.0;6.3;5.8;0.7;3.5;10.0;25.1;16.4;63.2;6.9
+Frank Kaminsky;PHX;29;7.0;240;Wisconsin;USA;2015;1;9;9.0;10.6;4.6;1.4;9.6;6.0;14.4;18.5;63.5;10.5
+Goga Bitadze;IND;22;7.0;250;None;Georgia;2019;1;18;50.0;7.0;3.5;1.1;-2.4;10.6;13.9;19.1;59.5;11.0
+Hassan Whiteside;UTA;33;7.0;265;Marshall;USA;2010;2;33;65.0;8.2;7.6;0.4;10.1;14.2;27.5;16.4;66.2;3.1
+Isaiah Hartenstein;LAC;24;7.0;250;None;Germany;2017;2;43;68.0;8.3;4.9;2.4;7.0;9.7;15.8;17.7;66.4;19.3
+Ivica Zubac;LAC;25;7.0;240;None;Croatia;2016;2;32;76.0;10.3;8.5;1.6;-3.5;11.5;22.3;16.8;66.0;9.7
+JaVale McGee;PHX;34;7.0;270;Nevada;USA;2008;1;18;74.0;9.2;6.7;0.6;5.8;13.4;26.6;21.4;65.1;5.5
+Joel Embiid;PHI;28;7.0;280;Kansas;Cameroon;2014;1;3;68.0;30.6;11.7;4.2;7.9;6.8;27.3;37.5;61.6;23.6
+Mitchell Robinson;NYK;24;7.0;240;Western Kentucky;USA;2018;2;36;72.0;8.5;8.6;0.5;-2.1;14.5;17.1;11.0;72.2;3.2
+Mo Bamba;ORL;24;7.0;231;Texas;USA;2018;1;6;71.0;10.6;8.1;1.2;-9.6;7.7;21.4;17.0;58.2;7.3
+Neemias Queta;SAC;22;7.0;248;Utah State;Portugal;2021;2;39;15.0;3.0;2.1;0.4;-4.1;10.4;14.4;17.6;49.5;7.6
+Nick Richards;CHA;24;7.0;245;Kentucky;Jamaica;2020;2;42;50.0;3.0;1.7;0.3;-13.0;8.6;13.7;14.7;68.9;5.4
+Olivier Sarr;OKC;23;7.0;240;Kentucky;France;Undrafted;Undrafted;Undrafted;22.0;7.0;4.2;0.9;-2.0;7.8;13.3;13.6;67.2;6.6
+Robin Lopez;ORL;34;7.0;281;Stanford;USA;2008;1;15;36.0;7.1;3.5;1.5;-6.4;9.8;8.9;18.2;57.0;14.2
+Udoka Azubuike;UTA;22;7.0;270;Kansas;Nigeria;2020;1;27;17.0;4.7;4.2;0.0;2.0;9.3;23.3;14.3;74.3;0.0
+Willie Cauley-Stein;PHI;28;7.0;240;Kentucky;USA;2015;1;6;20.0;1.7;2.0;0.5;7.2;6.4;14.4;9.9;47.4;7.4
+Jakob Poeltl;SAS;26;7.1;245;Utah;Austria;2016;1;9;68.0;13.5;9.3;2.8;3.4;12.5;18.4;18.2;61.3;13.1
+Jay Huff;LAL;24;7.1;240;Virginia;USA;Undrafted;Undrafted;Undrafted;4.0;0.0;1.0;0.3;36.5;4.0;11.1;8.3;0.0;7.1
+Jon Teske;MEM;25;7.1;265;Michigan;USA;Undrafted;Undrafted;Undrafted;3.0;0.0;0.7;0.3;-7.1;0.0;28.6;10.0;0.0;16.7
+Rudy Gobert;UTA;30;7.1;258;None;France;2013;1;27;66.0;15.6;14.7;1.1;9.6;11.4;31.2;16.6;73.2;5.2
+Bol Bol;ORL;22;7.2;220;Oregon;Sudan;2019;2;44;14.0;2.4;1.4;0.4;0.5;4.9;21.1;16.0;56.5;10.2
+Luke Kornet;BOS;26;7.2;250;Vanderbilt;USA;Undrafted;Undrafted;Undrafted;15.0;2.0;1.9;0.6;10.4;11.8;14.2;11.2;50.6;10.8
+Moses Brown;CLE;22;7.2;245;UCLA;USA;Undrafted;Undrafted;Undrafted;40.0;4.3;3.4;0.0;-6.2;11.0;25.7;19.9;61.2;0.5
+Boban Marjanovic;DAL;33;7.3;290;None;Serbia;Undrafted;Undrafted;Undrafted;23.0;4.3;1.7;0.1;12.8;6.6;22.8;31.1;61.5;4.4
+Kristaps Porzingis;WAS;26;7.3;240;None;Latvia;2015;1;4;51.0;20.2;8.1;2.3;0.4;6.8;20.4;28.6;57.7;13.3
+Tacko Fall;CLE;26;7.6;311;UCF;Senegal;Undrafted;Undrafted;Undrafted;11.0;1.1;2.1;0.2;-0.8;11.5;27.1;12.4;39.8;4.8
